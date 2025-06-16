@@ -42,6 +42,7 @@
   padding: 15px;
   border: 2px solid white;
   border-radius: 20px;
+  color: white;
 }
 .buttons .download-resume{
  padding: 18px;
@@ -75,17 +76,20 @@
   margin-top: 70px;  
 }
 
-.rightSection img{
-    /* width: 100%;
-    float: right;
-    clip-path: circle(40%);
-    shape-outside: circle(45%); */
-  width: 600px; 
+.rightSection img {
+  width: 600px;
   height: 600px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow:  5px 10px 5px 1px white, 0 0 20px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15),
+              0 8px 40px rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 }
+.rightSection img:hover {
+  box-shadow: 0 12px 28px rgba(255, 255, 255, 0.25),
+              0 10px 50px rgba(255, 255, 255, 0.15);
+}
+
 
 
 
@@ -122,6 +126,7 @@
     padding: 12px;
     margin: 8px;
     font-size: 1rem;
+
   }
 
   .rightSection {
