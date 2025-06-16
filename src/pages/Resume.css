@@ -1,0 +1,90 @@
+.Complete-resume{
+  margin-top: 30px;
+  padding: 20px;
+}
+.Heading-side{
+  text-align: center;
+  margin: 30px;
+}
+
+.photo-side{
+  width: 113px;
+  height: 150px;
+  border: 2px solid black;
+  display: flex;
+  position: absolute;
+  top: 5px;         
+  right: 50px;
+  margin-top: 100px;
+}
+.summary{
+  h3{
+    color: rgb(96, 96, 249);
+  }
+  text-align: justify;
+}
+.skills{
+  h3{
+    color: rgb(96, 96, 249);
+  }
+  text-align: justify;
+}
+.education{
+  h3{
+    color: rgb(96, 96, 249);
+  }
+  p{
+    margin: 0%;
+  }
+  .edu-entry{
+    display: flex;
+    justify-content: space-between;
+  }
+  #date{
+    text-align: right;
+  }
+}
+.trainings{
+  h3{
+    color: rgb(96, 96, 249);
+  }
+  p{
+    margin: 0%;
+  }
+  .training-entry{
+    display: flex;
+    justify-content: space-between;
+  }
+  #date{
+    text-align: right;
+  }
+}
+.projects{
+  h3{
+    color: rgb(96, 96, 249);
+  }
+  p{
+    margin: 0%;
+  }
+}
+.certification{
+  h3{
+    color: rgb(96, 96, 249);
+  }
+  p{
+    margin: 0%;
+  }
+}
+.responsibility{
+  h3{
+    color: rgb(96, 96, 249);
+  }
+  p{
+    margin: 0%;
+  }
+
+}
+
+
+
+
