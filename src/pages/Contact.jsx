@@ -1,2 +1,2 @@
-const Contact = () => <h1 > jcsdv</h1>;
+const Contact = () => <h1 >pagal se contact mat kro</h1>;
 export default Contact;
