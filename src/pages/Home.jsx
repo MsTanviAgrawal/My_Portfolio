@@ -1,7 +1,7 @@
 import React from 'react';
 import Typed from 'typed.js';
 import { useNavigate } from 'react-router-dom';
-import '../pages/Home.css';
+import '../StylePages/Home.css';
 import profilePic from '../assets/Photo.jpg'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -24,16 +24,13 @@ const Home = () => {
   }, []);
 
   return (
+    <>
     <section className='first'>
 
       <div className='leftSection'>
-        Hi, I am
+        <span className='greeting'> Hey! </span> I am
         <div className='name'> Tanvi Agrawal </div>
         <span className='developer' ref={el} />
-
-        {/* <p> I'm a passionate developer with a strong foundation in Java, React.js, and web technologies like HTML, CSS, and JavaScript.
-          I thrive on building responsive user interfaces, solving real-world problems through code, and continuously growing in dynamic tech environments.
-          Experienced in project development, team collaboration, and always eager to learn.</p> */}
 
         <div className='buttons'>
           <a
@@ -49,7 +46,6 @@ const Home = () => {
             href="https://github.com/MsTanviAgrawal"
             target="_blank"
             rel="noopener noreferrer"
-
           >
             <FaGithub />
           </a>
@@ -57,8 +53,7 @@ const Home = () => {
           <a
             href="https://www.linkedin.com/in/tanvi-agrawal-04a325236/"
             target="_blank"
-            // rel="noopener noreferrer"
-
+            rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>
@@ -70,8 +65,10 @@ const Home = () => {
           <img src={profilePic} alt="photo" ></img>
         </div>
       </div>
-
+     
     </section>
+  
+   </>
   );
 };
 

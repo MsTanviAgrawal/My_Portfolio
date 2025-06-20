@@ -1,0 +1,93 @@
+#skills {
+  text-align: center;
+}
+
+.skills-heading h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+/* .skills-heading h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 10px auto 0;
+  background: #a855f7;
+  border-radius: 2px;
+} */
+
+.skills-heading p {
+  font-size: 1.3rem;
+  color: #c0c0c0;
+  margin-bottom: 60px;
+}
+
+.sills-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+  gap: 50px;
+  max-width: 900px;
+  max-height: 900px;
+  margin: 50px auto;
+  
+}
+
+.skills-title {
+  background: #2b0a5d;
+  /* background: #3a0956; */
+  padding: 28px 20px 30px 20px;
+  border-radius: 16px;
+  box-shadow: 5px 10px 25px rgba(168, 85, 247, 0.15);
+  transition: transform 0.3s ease;
+  border: 1px solid white;
+ 
+}
+
+.skills-title:hover {
+  transform: translateY(-5px);
+}
+
+.skills-title h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.skills-nameLogo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+.skills-nameLogo div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #1e1c35;
+  border-radius: 999px;
+  padding: 8px 16px;
+  transition: background 0.3s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.skills-nameLogo div:hover {
+  background: #282545;
+}
+
+.skills-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.skills-name {
+  color: #e4e4e4;
+  font-size: 0.95rem;
+  font-weight: 500;
+}

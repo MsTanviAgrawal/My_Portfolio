@@ -1,62 +1,38 @@
+
 /* .navbar {
   position: sticky;
-  background-color: #1c135f ;
-  backdrop-filter: blur(5px); 
-  color: white;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-
-}
-
-.navbar-brand {
-  margin-left: 50px;
-  font-size: 2.1rem;
-  font-weight: bold;
-  text-shadow: 3px 2px 2px rgb(123, 8, 8), 0 0 25px, 0 0 5px rgb(115, 115, 222);
-}
-
-.navbar-links {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 1.8rem;
-  
-  margin-right: 20px;
-}
-
-.navbar-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: 0s;
-  padding: 10px;
-}
-
-.navbar-links a:hover,
-.navbar-links .active {
-  cursor: pointer;
-  font-size: 1.25rem;
-  color: rgb(169, 216, 98);
-} */
-/* Base Navbar */
-.navbar {
-  position: sticky;
   top: 0;
-  background-color: #1c135f;
+  background: linear-gradient(120deg, #371790 0%,  #ab0dae 100%);
   backdrop-filter: blur(5px);
   color: white;
   padding: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   z-index: 1001;
   height: 60px;
+} */
+
+.navbar {
+  position: fixed; /* Changed from sticky to fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(15, 10, 40, 0.4); /* Transparent dark with opacity */
+  backdrop-filter: blur(12px); /* Adds frosted glass effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  color: white;
+  padding:1rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1001;
+  height: 60px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
 
-/* Brand */
+
 .navbar-brand {
   margin-left: 20px;
   font-size: 2rem;
@@ -64,7 +40,6 @@
   text-shadow: 3px 2px 2px rgb(123, 8, 8), 0 0 25px, 0 0 5px rgb(115, 115, 222);
 }
 
-/* Desktop Nav Links */
 .navbar-links.desktop {
   display: flex;
   list-style: none;
@@ -82,7 +57,8 @@
 
 .navbar-links.desktop a:hover,
 .navbar-links.desktop .active {
-  color: rgb(217, 248, 139);
+  color: rgb(194, 183, 195);
+  font-weight: 400;
   font-size: 1.25rem;
 }
 
@@ -99,12 +75,10 @@
   display: none;
 }
 
-/* Sidebar (Mobile) */
 .sidebar {
   display: none;
 }
 
-/* Overlay */
 .overlay {
   display: none;
 }
