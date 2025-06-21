@@ -1,6 +1,7 @@
 .about{
     /* background: linear-gradient(90deg, #3f1863 0%,  #140d3f 100%); */
     justify-content: center;
+     padding: 100px 20px;
 }
 .about-heading h1{
     margin-top: 40px;

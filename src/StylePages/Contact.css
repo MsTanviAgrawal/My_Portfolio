@@ -2,9 +2,11 @@
 
 #contact {
   text-align: center;
+   padding: 100px 20px;
 }
 
 .contact-heading h2 {
+  margin-top: 30px;
   font-size: 3rem;
   font-weight: bold;
   position: relative;
@@ -74,7 +76,7 @@ textarea:focus {
   outline: none;
 }
 
-button {
+.submit {
   background: linear-gradient(90deg, #a855f7 0%, #ec4899 100%);
   color: white;
   border: none;

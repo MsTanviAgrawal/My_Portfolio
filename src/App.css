@@ -3,9 +3,11 @@
   padding: 0;
 }
 body{
-    background: linear-gradient(120deg, rgba(184, 9, 169, 1) 0%, rgba(20, 22, 128, 1) 100%);
-  /* background: #05c5f5;
-  background: linear-gradient(180deg, rgba(5, 197, 245, 1) 0%, rgba(16, 9, 121, 1) 100%, rgba(0, 212, 255, 1) 28%); */
+    
+background: linear-gradient(90deg, rgba(145, 23, 156, 1) 0%, rgba(8, 4, 82, 1) 100%);
+    /* background: linear-gradient(90deg, rgba(184, 9, 169, 1) 0%, rgba(20, 22, 128, 1) 100%); */
+  
+  /* background: linear-gradient(180deg, rgba(5, 197, 245, 1) 0%, rgba(16, 9, 121, 1) 100%, rgba(0, 212, 255, 1) 28%); */ 
     color: white;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 150px;

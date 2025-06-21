@@ -102,7 +102,7 @@ const Contact = () => {
               required
             />
           </div>
-          <button type="submit"> Send </button>
+          <button className='submit' type="submit"> Send </button>
         </form>
       </div>
     </section>
