@@ -3,8 +3,9 @@
   padding: 0;
 }
 body{
-    
-background: linear-gradient(90deg, rgba(145, 23, 156, 1) 0%, rgba(8, 4, 82, 1) 100%);
+
+background: linear-gradient(90deg, rgba(26, 170, 189, 1) 0%, rgba(13, 13, 105, 1) 80%); 
+/* background: linear-gradient(90deg, rgba(145, 23, 156, 1) 0%, rgba(8, 4, 82, 1) 100%); */
     /* background: linear-gradient(90deg, rgba(184, 9, 169, 1) 0%, rgba(20, 22, 128, 1) 100%); */
   
   /* background: linear-gradient(180deg, rgba(5, 197, 245, 1) 0%, rgba(16, 9, 121, 1) 100%, rgba(0, 212, 255, 1) 28%); */ 

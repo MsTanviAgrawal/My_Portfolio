@@ -39,7 +39,7 @@
 }
 
 .skills-title {
-  background: #2b0a5d;
+  background: #020f31;
   /* background: #3a0956; */
   /* padding: 25px 10px ; */
   border-radius: 16px;
@@ -57,7 +57,7 @@
   font-size: 2rem;
   color: white;
   padding-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .skills-nameLogo {

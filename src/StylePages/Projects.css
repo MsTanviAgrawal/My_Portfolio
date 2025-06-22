@@ -30,7 +30,7 @@
 }
 
 .project-title {
-  background: #370745;
+  background: #020f31;
   border: 1px solid white;
   border-radius: 16px;
   padding: 25px 20px;
@@ -97,6 +97,6 @@
 }
 
 .view-project:hover {
-  background-color: #3a053d;
+  background-color: #100b5c;
   transform: translateY(-2px);
 } 

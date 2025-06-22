@@ -1,5 +1,3 @@
-/* Contact.css */
-
 #contact {
   text-align: center;
    padding: 100px 20px;
@@ -31,10 +29,7 @@
 
 form {
     align-items: center;
-    /* background: #3a0956; */
-    /* background: #100629; */
-    background: #2b0a5d;
-  /* background-color: #1a1832; */
+    background:  #020f31;
   padding:  20px 40px 30px 40px;
   border-radius: 12px;
   border: 1px solid  #fdfdfe;

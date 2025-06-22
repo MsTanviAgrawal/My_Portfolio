@@ -11,17 +11,14 @@
 }
 .greeting{
   font-size: 6rem; 
-  color: #9efbf5;  
+  color: #fe8cdc;  
   font-weight: bold;
 }
-/* .intro span{
-  font-weight: bold;
-  color: rgb(181, 161, 248);
-} */
+
 
 .developer{
     display: inline-block;
-    color: #aad9f4;
+    color: #ffa3fc;
     white-space: nowrap;
     width: 50%;
     margin-top: 10px;
@@ -33,10 +30,7 @@
 .name{
   font-family: Copperplate Gothic Light;
 }
-/* .leftSection p{
-    font-size: 1.5rem;
-    padding: 10px;  
-} */
+
 .typed-cursor {
   display: none !important;
 }
@@ -61,6 +55,12 @@
   color: rgb(232, 226, 232);
   border: 2px solid white;
   border-radius: 20px;
+}
+
+.buttons a:hover{
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
 }
 
 .rightSection{
