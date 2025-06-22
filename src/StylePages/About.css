@@ -1,5 +1,4 @@
 .about{
-    /* background: linear-gradient(90deg, #3f1863 0%,  #140d3f 100%); */
     justify-content: center;
      padding: 100px 20px;
 }
@@ -10,13 +9,7 @@
     text-decoration: underline;
     color: white;
 }
-/* .about-section{
-    display: block;
-    justify-content: center;
-    margin: 50px 140px;
-    padding: 20px;
-    border: 3px solid white;
-} */
+
 .about-section {
    background: #020f31;
     display: block;
@@ -27,9 +20,8 @@
     padding: 20px;
     border: 1px solid white;
     border-radius: 20px;
-    /* background-color: rgba(255, 255, 255, 0.05);  */
     box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4); 
-    /* transition: box-shadow 0.3s ease; */
+
 }
 
 .about-section p{
