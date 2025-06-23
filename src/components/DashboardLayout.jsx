@@ -7,6 +7,7 @@ import Skills from '../pages/Skills';
 import Projects from '../pages/Projects';
 import Education from '../pages/Education';
 import Contact from '../pages/Contact';
+import Footer from './Footer';
 
 const DashboardLayout = () => {
   const homeRef = useRef(null);
@@ -15,6 +16,8 @@ const DashboardLayout = () => {
   const projectsRef = useRef(null);
   const educationRef = useRef(null);
   const contactRef = useRef(null);
+  const footerRef = useRef(null);
+  
 
   const handleScroll = (section) => {
     if (section === 'home') homeRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -30,12 +33,13 @@ const DashboardLayout = () => {
       <Navbar onScroll={handleScroll} />
       <main className="layout-main">
       
-        <div ref={homeRef}><Home /></div>
-        <div ref={aboutRef}><About /></div>
-        <div ref={skillsRef}><Skills /></div>
-        <div ref={projectsRef}><Projects /></div>
-        <div ref={educationRef}><Education /></div>
-        <div ref={contactRef}><Contact /></div>
+        <div ref={homeRef} id="home" ><Home /></div>
+        <div ref={aboutRef} id= "about"><About /></div>
+        <div ref={skillsRef} id="skills"><Skills /></div>
+        <div ref={projectsRef} id="projects"><Projects /></div>
+        <div ref={educationRef} id="education"><Education /></div>
+        <div ref={contactRef} id="contact"><Contact /></div>
+        <div ref={footerRef}> <Footer/></div>
       </main>
     </div>
   );

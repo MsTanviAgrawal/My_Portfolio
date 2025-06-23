@@ -86,14 +86,76 @@
               0 10px 50px rgba(255, 255, 255, 0.15);
 }
 
-
-
-
-/* Responsive Tablet View (768px to 1024px) */
-/* Responsive Mobile View (Up to 768px) */
-@media screen and (max-width: 768px) {
+/* ========== Tablet View: 769px to 1024px ========== */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .first {
-    flex-direction: column-reverse; /* <== IMPORTANT */
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .first > div {
+    width: 90%;
+  }
+
+  .leftSection {
+    font-size: 2.5rem;
+    margin-top: 30px;
+  }
+
+  .developer {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .buttons {
+    font-size: 1.2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .buttons a,
+  .buttons .download-resume {
+    padding: 14px;
+    margin: 8px;
+    font-size: 1rem;
+  }
+
+  .rightSection img {
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+  }
+}
+
+/* ========== Small Desktop View: 1025px to 1280px ========== */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .leftSection {
+    font-size: 3rem;
+    margin-top: 50px;
+  }
+
+  .developer {
+    font-size: 1.8rem;
+  }
+
+  .rightSection img {
+    width: 450px;
+    height: 450px;
+  }
+
+  .buttons a,
+  .buttons .download-resume {
+    font-size: 1.1rem;
+    padding: 14px 20px;
+  }
+}
+
+
+/* @media screen and (max-width: 768px) {
+  .first {
+    flex-direction: column-reverse; 
     align-items: center;
     text-align: center;
   }
@@ -135,4 +197,4 @@
     height: 250px;
     margin-bottom: 20px;
   }
-}
+} */

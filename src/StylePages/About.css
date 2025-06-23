@@ -37,3 +37,34 @@
     color: rgb(251, 162, 245);
     font-weight: bold;
 }
+@media screen and (max-width: 1024px) {
+  .about-section {
+    margin: 40px 100px;
+    padding: 20px;
+  }
+
+  .about-heading h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-section p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile Devices (up to 768px) */
+@media screen and (max-width: 768px) {
+  .about-section {
+    margin: 30px 20px;
+    padding: 15px;
+  }
+
+  .about-heading h1 {
+    font-size: 2rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+    margin: 15px 10px;
+  }
+}

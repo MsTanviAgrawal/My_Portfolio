@@ -4,11 +4,10 @@
   left: 0;
   width: 100%;
   background: rgba(15, 10, 40, 0.4);
-  /* Transparent dark with opacity */
+
   backdrop-filter: blur(12px);
-  /* Adds frosted glass effect */
   -webkit-backdrop-filter: blur(12px);
-  /* Safari support */
+
   color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -53,8 +52,6 @@
   transform: scale(1.1);
 }
 
-
-/* Hamburger (Mobile) */
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -75,11 +72,10 @@
   display: none;
 }
 
-/* ======= Mobile Styles ======= */
 @media (max-width: 768px) {
   .navbar-links.desktop {
     display: none;
-    /* hide desktop menu */
+
   }
 
   .hamburger {

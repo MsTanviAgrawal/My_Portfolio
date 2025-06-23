@@ -10,7 +10,7 @@ import nodejsLogo from '../assets/tech_logo/nodejs.png';
 import expressjsLogo from '../assets/tech_logo/express.png';
 import mysqlLogo from '../assets/tech_logo/mysql.png';
 import javaLogo from '../assets/tech_logo/java.png';
-import pythonLogo from '../assets/tech_logo/python.png';
+// import pythonLogo from '../assets/tech_logo/python.png';
 import gitLogo from '../assets/tech_logo/git.png';
 import githubLogo from '../assets/tech_logo/github.png';
 import vscodeLogo from '../assets/tech_logo/vscode.png';
@@ -42,7 +42,7 @@ const Skills = () => {
       title: 'Languages',
       skills: [
         { name: 'Java', logo: javaLogo },
-        { name: 'Python', logo: pythonLogo },
+        // { name: 'Python', logo: pythonLogo },
         { name: 'JavaScript', logo: javascriptLogo },
       ],
     },
