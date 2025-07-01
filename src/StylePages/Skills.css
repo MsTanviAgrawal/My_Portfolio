@@ -13,16 +13,6 @@
   text-decoration: underline;
 }
 
-/* .skills-heading h2::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 3px;
-  margin: 10px auto 0;
-  background: #a855f7;
-  border-radius: 2px;
-} */
-
 .skills-heading p {
   font-size: 1.3rem;
   color: #c0c0c0;
@@ -40,8 +30,6 @@
 
 .skills-title {
   background: #020f31;
-  /* background: #3a0956; */
-  /* padding: 25px 10px ; */
   border-radius: 16px;
   box-shadow: 5px 10px 25px rgba(168, 85, 247, 0.15);
   transition: transform 0.3s ease;

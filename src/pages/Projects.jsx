@@ -9,10 +9,10 @@ const projects = [
     link: '#'
   },
   {
-    title: 'Human Resources Management System (HRMS)',
-    description: 'A responsive web application designed to manage the recruitment process efficiently. It includes functionalities for handling applicants, interview scheduling, feedback submission, and real-time tracking of recruitment stages, thereby enhancing productivity and transparency.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'Angular', 'Express.js', 'MongoDB'],
-    link: '#'
+    title: 'Stack Overflow-Inspired Web Application',
+    description: 'Built a responsive Q&A web app using React, enabling users to post questions, submit answers, and interact through upvotes and comments. Implemented dynamic routing with React Router and managed global state using Redux. Designed reusable UI components for a seamless, interactive user experience across devices.',
+        tech: ['HTML', 'CSS', 'JavaScript', 'React.js' , 'Redux' , 'Node.js' ,'Express.js', 'MongoDB'],
+    link: 'https://github.com/MsTanviAgrawal/Code-Quest.git'
   }
 ]
 
