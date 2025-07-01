@@ -1,8 +1,10 @@
+
 footer {
   color: white;
-  padding: 3rem 1rem 2rem;
+  padding: 2.6rem 1rem 2rem;
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  background-color: #051a4d;
 }
 
 .footer-section {
@@ -11,14 +13,14 @@ footer {
 }
 
 .footer-section h2 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   margin-bottom: 1.2rem;
-  color: #2a0647;
+  color: #e0efff;
   font-weight: 600;
   letter-spacing: 0.5px;
+  padding-bottom: 20px;
 }
 
-/* Navigation Links */
 .footer-details {
   display: flex;
   justify-content: center;
@@ -38,14 +40,14 @@ footer {
 }
 
 .footer-details button:hover {
-  color: #a463f2;
+  color: #898b8f;
   transform: scale(1.05);
 }
 
-/* Social Icons */
 .social-media {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
   margin-bottom: 1.2rem;
 }
@@ -60,15 +62,14 @@ footer {
   transform: scale(1.15);
 }
 
-/* Copyright */
 footer .copyright {
-  font-size: 0.9rem;
-  color: #a7a8aa;
+  font-size: 1.05rem;
+  color: #e3ebfb;
   margin-top: 1rem;
 }
 
 footer .copyright a {
-  color: #fdb37a;
+  color: rgb(197, 248, 109);
   margin-left: 5px;
   text-decoration: none;
 }
@@ -77,16 +78,66 @@ footer .copyright a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
+/* Tablet and smaller (≤1024px) */
+@media (max-width: 1024px) {
+  footer {
+    padding: 2.5rem 1rem 2rem;
+  }
+
+  .footer-section h2 {
+    font-size: 1.6rem;
+  }
+
   .footer-details {
-    gap: 1rem;
+    gap: 1.2rem;
+  }
+
+  .footer-details button {
+    font-size: 0.95rem;
+  }
+
+  .social-media {
+    gap: 1.2rem;
+  }
+
+  .social-media a {
+    font-size: 1.4rem;
+  }
+}
+
+/* Mobile (≤600px) */
+@media (max-width: 600px) {
+  footer {
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  .footer-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .footer-details {
+    gap: 0.8rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-details button {
+    font-size: 0.95rem;
   }
 
   .social-media {
     gap: 1rem;
+    flex-wrap: wrap;
   }
 
-  .footer-section h2 {
-    font-size: 1.5rem;
+  .social-media a {
+    font-size: 1.3rem;
+  }
+
+  footer .copyright {
+    font-size: 0.8rem;
   }
 }
+
+
+

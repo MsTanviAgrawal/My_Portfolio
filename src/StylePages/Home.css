@@ -11,7 +11,8 @@
 }
 .greeting{
   font-size: 6rem; 
-  color: #fe8cdc;  
+  color: #3f055c;
+  /* color: #fe8cdc;   */
   font-weight: bold;
 }
 
@@ -151,50 +152,3 @@
     padding: 14px 20px;
   }
 }
-
-
-/* @media screen and (max-width: 768px) {
-  .first {
-    flex-direction: column-reverse; 
-    align-items: center;
-    text-align: center;
-  }
-
-  .first > div {
-    width: 100%;
-  }
-
-  .leftSection {
-    font-size: 2rem;
-    margin-top: 20px;
-  }
-
-  .developer {
-    font-size: 1.2rem;
-    width: 100%;
-  }
-
-  .buttons {
-    font-size: 1rem;
-    flex-direction: column;
-  }
-
-  .buttons a,
-  .buttons .download-resume {
-    padding: 12px;
-    margin: 8px;
-    font-size: 1rem;
-
-  }
-
-  .rightSection {
-    margin-top: 0;
-    padding: 0;
-  }
-
-  .rightSection img {
-    width: 250px;
-    height: 250px;
-    margin-bottom: 20px;
-  }
-} */

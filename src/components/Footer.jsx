@@ -54,8 +54,8 @@ const Footer = () => {
         </div>
 
         <p className="copyright">
-          © 2025 Tanvi Agrawal.
-          <a href="tanviagrawal9913@gmail.com">tanviagrawal9913@gmail.com</a> All rights reserved.
+          © 2025 Frontend Developer/
+          <a href="tanviagrawal9913@gmail.com">tanviagrawal9913@gmail.com</a> /All rights reserved.
         </p>
       </div>
     </footer>

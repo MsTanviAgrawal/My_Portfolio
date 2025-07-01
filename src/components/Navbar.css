@@ -21,9 +21,9 @@
 
 .navbar-brand {
   margin-left: 20px;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  text-shadow: 3px 2px 2px rgb(123, 8, 8), 0 0 25px, 0 0 5px rgb(115, 115, 222);
+  text-shadow: 3px 2px 2px rgb(4, 24, 69), 0 0 25px, 0 0 5px rgb(115, 115, 222);
 }
 
 .navbar-links.desktop {
@@ -48,7 +48,8 @@
 
 .navbar-links.desktop li button:hover,
 .navbar-links.desktop li button.active {
-  color: #a0e9fd;
+  /* color: #a0e9fd; */
+  color: rgb(184, 186, 189);
   transform: scale(1.1);
 }
 
@@ -72,7 +73,7 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   .navbar-links.desktop {
     display: none;
 
