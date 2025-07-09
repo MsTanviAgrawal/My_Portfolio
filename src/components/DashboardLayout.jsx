@@ -19,7 +19,7 @@ const DashboardLayout = () => {
   const footerRef = useRef(null);
   
 
-  const handleScroll = (section) => {
+  const smoothScroll = (section) => {
     if (section === 'home') homeRef.current?.scrollIntoView({ behavior: 'smooth' });
     if (section === 'about') aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
     if (section === 'skills') skillsRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -30,7 +30,7 @@ const DashboardLayout = () => {
 
   return (
     <div className="layout-container">
-      <Navbar onScroll={handleScroll} />
+      <Navbar onScroll={smoothScroll} />
       <main className="layout-main">
       
         <div ref={homeRef} id="home" ><Home /></div>

@@ -10,7 +10,6 @@ import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import './App.css';
 
-
 const App = () => {
   return (
     <Routes>
@@ -24,9 +23,7 @@ const App = () => {
         <Route path="resume" element={<Resume />} />
         <Route path="contact" element={<Contact />} />
       </Route>
-        
-       
-
+      
     </Routes>
   );
 };

@@ -12,7 +12,8 @@ const projects = [
     title: 'Stack Overflow-Inspired Web Application',
     description: 'Built a responsive Q&A web app using React, enabling users to post questions, submit answers, and interact through upvotes and comments. Implemented dynamic routing with React Router and managed global state using Redux. Designed reusable UI components for a seamless, interactive user experience across devices.',
         tech: ['HTML', 'CSS', 'JavaScript', 'React.js' , 'Redux' , 'Node.js' ,'Express.js', 'MongoDB'],
-    link: 'https://github.com/MsTanviAgrawal/Code-Quest.git'
+   // link: 'https://github.com/MsTanviAgrawal/Code-Quest.git'
+    link: 'https://codequest93.netlify.app/'
   }
 ]
 

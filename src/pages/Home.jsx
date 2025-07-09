@@ -34,7 +34,7 @@ const Home = () => {
 
         <div className='buttons'>
           <a
-            href="https://drive.google.com/file/d/1fQqnDr8VO1xd09fVMMQJmbMQBNxdZj6w/view?usp=sharing"
+            href="https://drive.google.com/file/d/1v5nF3EDswGr1lr-Ky1qCTjMEAuT-emN0/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className='download-resume'
