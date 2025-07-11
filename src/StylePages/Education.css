@@ -88,23 +88,22 @@
 
  #education {
   text-align: center;
-  padding: 4em 1em;
+  padding: 50px 20px;
   
 }
 
 .education-section {
   text-align: center;
-  margin-bottom: 2.5em;
+   margin-bottom: 40px;
 }
 
-.edu-heading {
-  margin-top: 1.5em;
+.education-section h1{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-size: 3rem;
-  font-weight: bold;
-  position: relative;
-  display: inline-block;
-  color: #ffffff;
   text-decoration: underline;
+  color: #ffffff;
 }
 
 .education-section p {
@@ -115,10 +114,10 @@
 
 .college {
   background: #020f31;
-  max-width: 800px;
-  width: 90%;
-  margin: 3em auto;
-  padding: 2.5em 2em 3em 2em;
+  max-width: 900px;
+  width: 60%;
+  margin: 2em auto;
+  padding: 2em;
   border-radius: 16px;
   border: 1px solid #faf9fb;
   box-shadow: 0 0 20px rgba(168, 85, 247, 0.1);
@@ -137,7 +136,7 @@
   font-size: 1.6rem;
   font-weight: bold;
   color: #ffffff;
-  margin-bottom: 1.2em;
+  margin-bottom: 1.1em;
 }
 
 .college img {
@@ -148,7 +147,7 @@
   background-color: #fff;
   padding: 8px;
   border: 3px solid #a855f7;
-  margin-bottom: 1.2em;
+  margin-bottom: 1.1em;
 }
 
 .college h4 {
@@ -172,8 +171,12 @@
 
 /* Tablets (<= 1024px) */
 @media screen and (max-width: 1024px) {
-  .edu-heading {
-    font-size: 2.5rem;
+  .education-section h1{
+    font-size: 2rem;
+  }
+
+   .education-section p{
+    font-size: 0.9rem;
   }
 
   .college {
@@ -181,34 +184,39 @@
   }
 
   .college h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .college h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .college p {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
   }
 
   .education-section p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
 /* Mobile Devices (<= 768px) */
 @media screen and (max-width: 768px) {
-  .edu-heading {
-    font-size: 2rem;
+  .education-section h1{
+    font-size: 1.6rem;
+  }
+
+   .education-section p{
+    font-size: 0.8rem;
   }
 
   .college {
     padding: 1.5em 1em;
   }
 
-  .college h3 {
-    font-size: 1.3rem;
+  .college h3,
+  .college h4 {
+    font-size: 0.8rem;
   }
 
   .college img {
@@ -216,23 +224,23 @@
     height: 80px;
   }
 
-  .college h4 {
-    font-size: 1.1rem;
-  }
-
   .college p {
     font-size: 1rem;
   }
 
   .education-section p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
 /* Very Small Devices (<= 480px) */
 @media screen and (max-width: 480px) {
-  .edu-heading {
-    font-size: 1.6rem;
+  .education-section h1{
+    font-size: 1rem;
+  }
+
+  .education-section p{
+    font-size: 0.7rem;
   }
 
   .college {
@@ -246,11 +254,11 @@
 
   .college h3,
   .college h4 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .college p {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
   }
 }
 

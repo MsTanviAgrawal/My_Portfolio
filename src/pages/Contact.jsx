@@ -45,7 +45,7 @@ const Contact = () => {
       id='contact'
     >
       <div className='contact-heading'>
-        <h2>CONTACT </h2>
+        <h1>CONTACT </h1>
         <p>
           I’d love to hear from you—reach out for any opportunities or questions!
         </p>

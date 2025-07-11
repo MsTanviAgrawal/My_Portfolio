@@ -62,7 +62,7 @@ const Skills = () => {
       <section id="skills" >
 
         <div className="skills-heading">
-          <h2 >SKILLS</h2>
+          <h1 >SKILLS</h1>
           <p >
             A collection of my technical skills and expertise honed through various projects and experiences
           </p>
