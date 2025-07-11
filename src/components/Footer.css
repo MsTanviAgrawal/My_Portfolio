@@ -103,6 +103,10 @@ footer .copyright a:hover {
   .social-media a {
     font-size: 1.4rem;
   }
+
+   footer .copyright {
+    font-size: 0.8rem;
+  }
 }
 
 /* Mobile (≤600px) */
@@ -135,7 +139,7 @@ footer .copyright a:hover {
   }
 
   footer .copyright {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
 

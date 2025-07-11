@@ -5,11 +5,11 @@ import cssLogo from '../assets/tech_logo/css.png';
 import javascriptLogo from '../assets/tech_logo/javascript.png';
 import reactjsLogo from '../assets/tech_logo/reactjs.png';
 import tailwindcssLogo from '../assets/tech_logo/tailwindcss.png';
-import bootstrapLogo from '../assets/tech_logo/bootstrap.png';
+//import bootstrapLogo from '../assets/tech_logo/bootstrap.png';
 import nodejsLogo from '../assets/tech_logo/nodejs.png';
 import expressjsLogo from '../assets/tech_logo/express.png';
 import mongodbLogo from '../assets/tech_logo/mongodb.png';
-import mysqlLogo from '../assets/tech_logo/mysql.png';
+//import mysqlLogo from '../assets/tech_logo/mysql.png';
 import javaLogo from '../assets/tech_logo/java.png';
 import gitLogo from '../assets/tech_logo/git.png';
 import githubLogo from '../assets/tech_logo/github.png';
@@ -27,7 +27,7 @@ const Skills = () => {
         { name: 'JavaScript', logo: javascriptLogo },
         { name: 'React JS', logo: reactjsLogo },
         { name: 'Tailwind CSS', logo: tailwindcssLogo },
-        { name: 'Bootstrap', logo: bootstrapLogo },
+       // { name: 'Bootstrap', logo: bootstrapLogo },
       ],
     },
     {
@@ -35,7 +35,7 @@ const Skills = () => {
       skills: [
         { name: 'Node JS', logo: nodejsLogo },
         { name: 'Express JS', logo: expressjsLogo },
-        { name: 'MySQL', logo: mysqlLogo },
+       // { name: 'MySQL', logo: mysqlLogo },
         { name: 'MongoDB', logo: mongodbLogo },
       ],
     },
