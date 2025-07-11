@@ -9,7 +9,6 @@ const Navbar = ({ onScroll }) => {
       <label htmlFor="menu-toggle" className="hamburger"></label>
       <label htmlFor="menu-toggle" className="overlay"></label>
 
-      {/* Sidebar for Mobile */}
       <div className="sidebar">
         <ul className="navbar-links">
           <li><NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink></li>
