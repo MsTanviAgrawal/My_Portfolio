@@ -27,7 +27,7 @@ const Education = () => {
 
       <div className="college">
 
-        {education.map((edu, index) => (
+        {education.map((edu) => (
 
           <div key={edu.id}>
             <div>

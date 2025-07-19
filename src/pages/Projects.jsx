@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'FREELANCING WEBSITE',
     description: 'A comprehensive platform that connects freelancers with clients across various domains. It includes features such as skill assessments, project management tools, portfolio showcases, a matching algorithm for better client-freelancer pairing, dispute resolution mechanisms, and a mobile application for enhanced user experience.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Node.js', 'MongoDB'],
+    tech: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Redux' , 'Node.js', 'MongoDB'],
     link: '#'
   },
   {
