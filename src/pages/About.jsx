@@ -33,8 +33,8 @@ const About = () => {
           My project work includes building a 
           Freelancing Website 
           to connect clients and freelancers through a feature-rich platform, and developing a 
-          Human Resources Management System
-          using Angular to streamline the recruitment process.
+          Stack Overflow-Inspired Web Application
+          using Mern Stack technologies.
         </p>
         <p className='intro'>
           Outside of tech, I’m a creative thinker with a love for art, painting, and sports, having earned accolades in badminton and district-level art competitions.
