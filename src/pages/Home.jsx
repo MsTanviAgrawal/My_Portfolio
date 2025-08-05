@@ -9,13 +9,13 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/resume'); // Replace with your target path
+    navigate('/resume'); 
   };
   const el = React.useRef(null);
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['A <i> Frontend Developer.<i>'],
+      strings: ['A <i> Mern Stack Developer.<i>'],
       typeSpeed: 50,
     });
     return () => {
