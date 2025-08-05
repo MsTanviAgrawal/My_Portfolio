@@ -12,7 +12,7 @@ const About = () => {
           Hello! I'm
           <span className='full-name'> Tanvi Agrawal </span>
           a passionate and detail-oriented
-          <span> Frontend Developer </span>
+          <span> Mern Stack Developer </span>
           with a strong foundation in 
           HTML, CSS, JavaScript, React.js
           and core programming principles like 
@@ -25,9 +25,9 @@ const About = () => {
            with a CGPA of 7.85, and I’m now focused on building modern, user-friendly web applications.
         </p>
         <p className='intro'>
-          Through intensive training programs with ITEXPERTS and Coplur Technologies, I’ve gained hands-on experience in Java development and frontend technologies.
+          Through intensive training programs with ITEXPERTS and Coplur Technologies, I’ve gained hands-on experience in Java development and mern stack technologies.
           These sessions sharpened my practical skills and helped me understand real-world software development practices, from writing clean, efficient code to using tools like 
-          Git, VS Code, and Node.js.
+          Git, VS Code, and Netlify.
         </p>
         <p className='intro'>
           My project work includes building a 
