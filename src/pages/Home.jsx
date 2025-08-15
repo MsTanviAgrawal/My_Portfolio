@@ -15,8 +15,13 @@ const Home = () => {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['A <i> Mern Stack Developer.<i>'],
-      typeSpeed: 50,
+      strings: ['<i> A Frontend Developer & </i>',
+      '<i>A MERN Stack Developer.</i>'],
+    typeSpeed: 100,    
+    backSpeed: 50,    
+    startDelay: 500,  
+    backDelay: 2000,
+      loop: true
     });
     return () => {
       typed.destroy();
@@ -34,7 +39,7 @@ const Home = () => {
 
         <div className='buttons'>
           <a
-            href="https://drive.google.com/file/d/1v5nF3EDswGr1lr-Ky1qCTjMEAuT-emN0/view?usp=sharing"
+            href="https://drive.google.com/file/d/1zZg9aZn518TO_R6N_6CfOfpoaJ6uJAro/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className='download-resume'
