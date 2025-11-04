@@ -3,17 +3,17 @@ import '../StylePages/Projects.css'
 
 const projects = [
   {
-    title: 'FREELANCING WEBSITE',
-    description: 'A comprehensive platform that connects freelancers with clients across various domains. It includes features such as skill assessments, project management tools, portfolio showcases, a matching algorithm for better client-freelancer pairing, dispute resolution mechanisms, and a mobile application for enhanced user experience.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Redux' , 'Node.js', 'MongoDB'],
+    title: ' Appoint-A Freelancing Website ',
+    description: ' I developed a freelancing platform called Appoint using the MERN stack, featuring role-based authentication for both service providers and clients. The platform includes real-time encrypted chat and calling, ensuring secure and seamless communication between users. Additionally, I designed and deployed a fully responsive UI/UX, providing an intuitive experience that enables smooth service hiring, collaboration, and deal management. ',
+    tech: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Redux' , 'Node.js', 'Express', 'MongoDB'],
     link: '#'
   },
   {
-    title: 'Stack Overflow-Inspired Web Application',
-    description: 'Built a responsive Q&A web app using React, enabling users to post questions, submit answers, and interact through upvotes and comments. Implemented dynamic routing with React Router and managed global state using Redux. Designed reusable UI components for a seamless, interactive user experience across devices.',
-        tech: ['HTML', 'CSS', 'JavaScript', 'React.js' , 'Redux' , 'Node.js' ,'Express.js', 'MongoDB'],
+    title: 'Showcase Dashboard for E-commerce Website',
+    description: 'I developed a Showcase Dashboard for an e-commerce website using React.js, designed to present key business insights and metrics in an interactive, visually appealing format. The dashboard features dynamic data visualization, animated UI components, and a responsive layout to enhance user engagement and accessibility. By integrating smooth transitions and interactive elements, user-friendly experience that effectively highlights essential e-commerce performance indicators.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'React.js'],
    // link: 'https://github.com/MsTanviAgrawal/Code-Quest.git'
-    link: 'https://codequest93.netlify.app/'
+    link: '#'
   }
 ]
 

@@ -30,7 +30,9 @@ const DashboardLayout = () => {
 
   return (
     <div className="layout-container">
+
       <Navbar onScroll={smoothScroll} />
+      
       <main className="layout-main">
       
         <div ref={homeRef} id="home" ><Home /></div>

@@ -24,9 +24,9 @@ const Footer = () => {
             { name: "Skills", id: "skills" },
             { name: "Projects", id: "projects" },
             { name: "Education", id: "education" },
-          ].map((item, index) => (
+          ].map((item) => (
             <button
-              key={index}
+              key={item.id}
               onClick={() => handleScroll(item.id)}
             >
               {item.name}
@@ -55,7 +55,7 @@ const Footer = () => {
 
         <p className="copyright">
           © 2025 Mern Stack Developer/
-          <a href="tanviagrawal9913@gmail.com">tanviagrawal9913@gmail.com</a> /All rights reserved.
+          <a href="mailto:tanviagrawal9913@gmail.com">tanviagrawal9913@gmail.com</a> /All rights reserved.
         </p>
       </div>
     </footer>

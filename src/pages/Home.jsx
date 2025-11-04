@@ -1,27 +1,33 @@
 import React from 'react';
 import Typed from 'typed.js';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import '../StylePages/Home.css';
 import profilePic from '../assets/Photo.jpg'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate('/resume'); 
-  };
+  // const handleClick = () => {
+  //   navigate('/resume'); 
+  // };
+
   const el = React.useRef(null);
-
+  
   React.useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ['<i> A Frontend Developer & </i>',
       '<i>A MERN Stack Developer.</i>'],
-    typeSpeed: 100,    
-    backSpeed: 50,    
-    startDelay: 500,  
-    backDelay: 2000,
-      loop: true
+      typeSpeed: 50,
+      backSpeed: 30,
+      startDelay: 300,
+      backDelay: 1500,
+      loop: true,
+      smartBackspace: true,
+      fadeOut: true,
+      fadeOutDelay: 300,
+      shuffle: false,
+      cursorChar: '|',
     });
     return () => {
       typed.destroy();

@@ -85,6 +85,7 @@
 
 /* Very Small Devices (up to 480px) */
 @media screen and (max-width: 480px) {
+  
   .about-heading h1 {
     font-size: 1rem;
   }

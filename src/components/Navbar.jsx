@@ -5,16 +5,15 @@ const Navbar = ({ onScroll }) => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">Tanvi's Portfolio</div>
-      <input type="checkbox" id="menu-toggle" className="menu-toggle" />
+      {/* <input type="checkbox" id="menu-toggle" className="menu-toggle" />
       <label htmlFor="menu-toggle" className="hamburger"></label>
-      <label htmlFor="menu-toggle" className="overlay"></label>
+      <label htmlFor="menu-toggle" className="overlay"></label> */}
 
       <div className="sidebar">
         <ul className="navbar-links">
           <li><NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink></li>
           <li><NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>About</NavLink></li>
           <li><NavLink to="/skills" className={({ isActive }) => isActive ? 'active' : ''}>Skills</NavLink></li>
-          {/* <li><NavLink to="/experience" className={({ isActive }) => isActive ? 'active' : ''}>Training Experience</NavLink></li> */}
           <li><NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''}>Projects</NavLink></li>
           <li><NavLink to="/education" className={({ isActive }) => isActive ? 'active' : ''}>Education</NavLink></li>
           <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>Contact Me</NavLink></li>
