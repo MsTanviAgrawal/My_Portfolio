@@ -1,22 +1,38 @@
-import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = ({ onScroll }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleNavClick = (section) => {
+    onScroll(section);
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-brand">Tanvi's Portfolio</div>
-      {/* <input type="checkbox" id="menu-toggle" className="menu-toggle" />
-      <label htmlFor="menu-toggle" className="hamburger"></label>
-      <label htmlFor="menu-toggle" className="overlay"></label> */}
+      
+      <div className="hamburger" onClick={handleMenuToggle}>
+        ☰
+      </div>
 
-      <div className="sidebar">
+      {isMenuOpen && (
+        <div className="overlay" onClick={handleMenuToggle}></div>
+      )}
+
+      <div className={`sidebar ${isMenuOpen ? 'open' : ''}`}>
         <ul className="navbar-links">
-          <li><NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink></li>
-          <li><NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>About</NavLink></li>
-          <li><NavLink to="/skills" className={({ isActive }) => isActive ? 'active' : ''}>Skills</NavLink></li>
-          <li><NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''}>Projects</NavLink></li>
-          <li><NavLink to="/education" className={({ isActive }) => isActive ? 'active' : ''}>Education</NavLink></li>
-          <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>Contact Me</NavLink></li>
+          <li><button onClick={() => handleNavClick('home')}>Home</button></li>
+          <li><button onClick={() => handleNavClick('about')}>About</button></li>
+          <li><button onClick={() => handleNavClick('skills')}>Skills</button></li>
+          <li><button onClick={() => handleNavClick('projects')}>Projects</button></li>
+          <li><button onClick={() => handleNavClick('education')}>Education</button></li>
+          <li><button onClick={() => handleNavClick('contact')}>Contact Me</button></li>
         </ul>
       </div>
 

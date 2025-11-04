@@ -6,11 +6,6 @@ import profilePic from '../assets/Photo.jpg'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
-  // const navigate = useNavigate();
-
-  // const handleClick = () => {
-  //   navigate('/resume'); 
-  // };
 
   const el = React.useRef(null);
   

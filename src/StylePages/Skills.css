@@ -1,30 +1,28 @@
 #skills {
   text-align: center;
-  padding: 45px 20px;
+  padding: 60px 20px;
 }
 
 .skills-heading h1 {
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 20px;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-decoration: underline;
   color: #ffffff;
 }
 
 .skills-heading p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #c0c0c0;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .sills-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
-  gap: 50px;
-  max-width: 900px;
-  max-height: 900px;
-  margin: 50px auto;
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 20px auto;
 }
 
 .skills-title {
@@ -41,7 +39,7 @@
 }
 
 .skills-title h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
   padding-top: 20px;
   margin-bottom: 20px;
@@ -112,7 +110,6 @@
   }
 }
 
-/* Mobile Devices (≤768px) */
 @media screen and (max-width: 768px) {
   .skills-heading h1 {
     font-size: 1.6rem;
@@ -120,7 +117,7 @@
 
   .skills-heading p {
     font-size: 0.8rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .skills-title h3 {
@@ -137,22 +134,27 @@
   }
 
   .sills-section {
+    grid-template-columns: 1fr;
     gap: 20px;
+    padding: 0 10px;
   }
 }
 
-/* Extra Small Devices (≤480px) */
 @media screen and (max-width: 480px) {
+  #skills {
+    padding: 40px 10px;
+  }
+
   .skills-heading h1 {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .skills-heading p {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
 
   .skills-title h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .skills-nameLogo {
@@ -161,12 +163,16 @@
   }
 
   .skills-logo {
-    width: 30px;
-    height: 25px;
+    width: 35px;
+    height: 30px;
   }
 
   .skills-name {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .sills-section {
+    grid-template-columns: 1fr;
   }
 }
 
