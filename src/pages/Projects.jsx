@@ -9,10 +9,11 @@ const projects = [
     link: '#'
   },
   {
-    title: 'ToDo App',
-    description: 'I created a simple and easy-to-use To-Do app where users can add, edit, and delete their daily tasks. It’s built with HTML, CSS, JavaScript, and React.js, and has a clean design that works smoothly on any device. I used React’s features like components and state to make the app update instantly when users add or change a task. This project helped me improve my front-end development skills and understand how to manage data and user interactions in real-time.',
+    title: 'Showcase Dashboard',
+    description: 'I developed a Showcase Dashboard for an e-commerce website using React.js, designed to present key business insights and metrics in an interactive, visually appealing format. The dashboard features dynamic data visualization, animated UI components, and a responsive layout to enhance user engagement and accessibility. By integrating smooth transitions and interactive elements, user-friendly experience that effectively highlights essential e-commerce performance indicators.',
     tech: ['HTML', 'CSS', 'JavaScript', 'React.js'],
-    link: 'https://github.com/MsTanviAgrawal/ToDo_App.git'
+    // link: 'https://github.com/MsTanviAgrawal/ToDo_App.git'
+    link:'https://github.com/MsTanviAgrawal/Dashboard-Showcase.git'
   }
 ]
 
