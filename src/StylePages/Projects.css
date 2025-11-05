@@ -1,5 +1,5 @@
 #projects {
-  padding: 50px 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
@@ -16,7 +16,7 @@
 .project-heading p {
   font-size: 1.1rem;
   color: #cccccc;
-  margin: 20px auto 20px ;
+  margin: 10px auto ;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -37,7 +37,7 @@
   justify-content: space-between;
   border: 1px solid white;
   border-radius: 16px;
-  padding: 25px 20px;
+  padding: 15px 20px;
   text-align: left;
   width: 100%;
   max-width: 420px;
