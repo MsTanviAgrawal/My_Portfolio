@@ -1,12 +1,76 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Personal Portfolio Website
 
-Currently, two official plugins are available:
+This project is my personal portfolio website, built to showcase my skills, projects, and experience as a developer. It serves as a clean and simple place where people can learn more about me and explore the work I’ve done.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Live Website:** [https://portfolio095.netlify.app/](https://portfolio095.netlify.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Overview
+
+This portfolio is designed to highlight who I am, what I do, and the projects I’ve created. It’s fully responsive, easy to navigate, and built to give visitors a quick understanding of my abilities and background.
+
+---
+
+## Features
+
+* Clean and modern UI
+* Fully responsive design
+* Dedicated sections for:
+
+  * About Me
+  * Skills
+  * Projects
+  * Contact
+* Smooth navigation and animations
+* Hosted on Netlify
+
+---
+
+## Tech Stack
+
+* **HTML**
+* **CSS / Tailwind / Custom Styling**
+* **JavaScript**
+* **React (if applicable in your build)**
+* **Netlify** for hosting
+
+---
+
+## What You’ll Find in This Portfolio
+
+* A short introduction about me
+* My technical skills and tools I work with
+* A portfolio of my projects with links
+* Contact options for communication
+
+---
+
+## Running the Project Locally
+
+1. Clone the repo:
+
+   ```bash
+   git clone <repo-url>
+   ```
+2. Navigate into the project folder
+3. Install dependencies (if React-based):
+
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+---
+
+## Contact
+
+Feel free to connect with me through the contact section on my portfolio site.
+
+Thank you for checking out my portfolio!
+
