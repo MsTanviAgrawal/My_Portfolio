@@ -5,15 +5,20 @@ const projects = [
   {
     title: ' Appoint-A Freelancing Website ',
     description: ' I developed a freelancing platform called Appoint using the MERN stack, featuring role-based authentication for both service providers and clients. The platform includes real-time encrypted chat and calling, ensuring secure and seamless communication between users. Additionally, I designed and deployed a fully responsive UI/UX, providing an intuitive experience that enables smooth service hiring, collaboration, and deal management. ',
-    tech: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Redux' , 'Node.js', 'Express', 'MongoDB'],
+    tech: ['HTML', 'CSS', 'JavaScript', 'React.JS', 'Redux' , 'Node.js', 'Express', 'MongoDB'],
     link: '#'
   },
   {
-    title: 'Showcase Dashboard',
-    description: 'I developed a Showcase Dashboard for an e-commerce website using React.js, designed to present key business insights and metrics in an interactive, visually appealing format. The dashboard features dynamic data visualization, animated UI components, and a responsive layout to enhance user engagement and accessibility. By integrating smooth transitions and interactive elements, user-friendly experience that effectively highlights essential e-commerce performance indicators.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'React.js'],
-    // link: 'https://github.com/MsTanviAgrawal/ToDo_App.git'
-    link:'https://github.com/MsTanviAgrawal/Dashboard-Showcase.git'
+    title: 'Mini Projects',
+    description: 'Task Manager is a practical application designed to help users efficiently manage their daily tasks through an intuitive interface. This project demonstrates my ability to build a structured task tracking system where users can create, view, and organize tasks in a logical and accessible way. It showcases clean component structure, state management, and user interaction handling — all essential skills in front-end development.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'React.JS'],
+    link:'https://github.com/MsTanviAgrawal/Mini_Projects.git'
+  },
+  {
+    title: 'Task Manager',
+    description: 'Task Manager is a practical application designed to help users efficiently manage their daily tasks through an intuitive interface. This project demonstrates my ability to build a structured task tracking system where users can create, view, and organize tasks in a logical and accessible way. It showcases clean component structure, state management, and user interaction handling — all essential skills in front-end development. This task manager reflects my focus on usability and real-world functionality, making it a strong example of my capability to build useful, interactive applications using modern development practices.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'React.JS', 'Node.js', 'Express', 'MongoDB'],
+    link:'https://github.com/MsTanviAgrawal/Task_Manager.git'
   }
 ]
 
