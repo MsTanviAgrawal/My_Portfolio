@@ -3,7 +3,6 @@ import DashboardLayout from './components/DashboardLayout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Skills from './pages/Skills'
-
 import Projects from './pages/Projects';
 import Education from './pages/Education'
 import Resume from './pages/Resume';
