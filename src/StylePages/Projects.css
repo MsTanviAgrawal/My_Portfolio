@@ -1,176 +1,195 @@
+/* =====================
+   PROJECTS SECTION
+===================== */
 #projects {
   padding: 30px 20px;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
+/* =====================
+   HEADING
+===================== */
 .project-heading h1 {
-   margin-top: 30px;
-  font-size: 2.4rem;
-  text-align: center;
+  margin-top: 20px;
+  font-size: 2.2rem;
   color: #f5f3ff;
-  text-decoration: none;
   position: relative;
 }
 
 .project-heading h1::after {
   content: "";
   display: block;
-  width: 90px;
+  width: 80px;
   height: 3px;
-  margin: 10px auto 0;
+  margin: 8px auto 0;
   background: linear-gradient(90deg, #a855f7, #ec4899);
   border-radius: 2px;
 }
 
 .project-heading p {
-  font-size: 1.1rem;
-  color: #c0c0c0;
-  margin: 25px auto;
+  font-size: 0.95rem;
+  color: #c7c7d2;
+  margin: 18px auto 35px;
+  max-width: 560px;
 }
 
-
+/* =====================
+   PROJECT GRID
+===================== */
 .project-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
-  max-width: 1400px;
+  gap: 32px; /* reduced */
+  max-width: 1200px; /* reduced */
   margin: 0 auto;
 }
 
+/* =====================
+   PROJECT CARD
+===================== */
 .project-title {
-  background: #020f31;
+  width: 100%;
+  max-width: 360px; 
+  min-height: 315px; 
+  padding: 16px 18px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid white;
-  border-radius: 16px;
-  padding: 15px 20px;
   text-align: left;
-  width: 100%;
-  max-width: 420px;
-  min-height: 370px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(40, 15, 80, 0.88),
+    rgba(15, 5, 35, 0.95)
+  );
+
+  border: 1px solid rgba(168, 85, 247, 0.35);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.55),
+    0 0 28px rgba(168, 85, 247, 0.18);
+
+  backdrop-filter: blur(6px);
+  transition: all 0.35s ease;
 }
 
 .project-title:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  transform: translateY(-6px);
+  box-shadow:
+    0 25px 55px rgba(0, 0, 0, 0.6),
+    0 0 35px rgba(236, 72, 153, 0.35);
 }
 
+/* =====================
+   PROJECT TITLE
+===================== */
 .project-title h3 {
   text-align: center;
-  color: white;
-  font-size: 1.3rem;
-  margin-bottom: 15px ;
+  font-size: 1.15rem; /* reduced */
+  color: #f5f3ff;
+  margin-bottom: 12px;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
+/* =====================
+   DESCRIPTION
+===================== */
 .project-title p {
-  font-size: 1rem;
+  font-size: 0.9rem; /* reduced */
+  color: #e5e7eb;
+  line-height: 1.6;
   text-align: justify;
-  color: white;
-  line-height: 1.7;
   flex-grow: 1;
-  padding-top: 10px;
+  margin-bottom: 12px;
 }
 
+/* =====================
+   SKILLS TAGS
+===================== */
 .project-skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
-  margin: 20px auto;
-
+  gap: 10px; /* reduced */
+  margin: 14px 0 10px;
 }
 
 .project-skills span {
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #a855f7;
-  padding: 6px 12px;
-  border-radius: 10px;
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 0.75rem; /* reduced */
+  padding: 5px 10px;
+  border-radius: 999px;
+
+  background: rgba(30, 20, 60, 0.85);
+  color: #e5e7eb;
+
+  border: 1px solid rgba(168, 85, 247, 0.4);
 }
+
+/* =====================
+   VIEW PROJECT BUTTON
+===================== */
 .view-project {
   display: block;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 30px;
-  border: 1px solid #fbf9fa;
-  border-radius: 8px;
+  margin-top: 16px;
+  padding: 9px 0;
+
+  font-size: 0.9rem;
   font-weight: 600;
+  text-align: center;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  color: #ffffff;
+  border-radius: 999px;
+
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+
+  transition: all 0.3s ease;
 }
 
 .view-project:hover {
-   background: linear-gradient(90deg, #9333ea 0%, #db2777 100%);
+  background: linear-gradient(90deg, #9333ea, #db2777);
   transform: translateY(-2px);
-} 
+  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.45);
+}
 
+/* =====================
+   RESPONSIVE
+===================== */
+
+/* Tablet */
 @media screen and (max-width: 1024px) {
   .project-heading h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
+
   .project-heading p {
     font-size: 0.9rem;
   }
 
   .project-section {
-    gap: 40px;
+    gap: 26px;
   }
 }
 
+/* Mobile */
 @media screen and (max-width: 768px) {
   #projects {
-    padding: 40px 15px;
+    padding: 50px 15px;
   }
 
   .project-heading h1 {
     font-size: 1.6rem;
   }
-  .project-heading p {
-    font-size: 0.8rem;
-    padding-bottom: 15px;
-  }
 
-  .project-section {
-    gap: 30px;
+  .project-heading p {
+    font-size: 0.85rem;
   }
 
   .project-title {
     max-width: 100%;
-    padding: 20px 15px;
-  }
-
-  .project-title h3 {
-    font-size: 1.2rem;
-  }
-
-  .project-title p {
-    font-size: 0.95rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #projects {
-    padding: 30px 10px;
-  }
-
-  .project-heading h1 {
-    font-size: 1.4rem;
-  }
-  .project-heading p {
-    font-size: 0.85rem;
-    padding-bottom: 10px;
-  }
-
-  .project-section {
-    gap: 25px;
   }
 
   .project-title h3 {
@@ -178,11 +197,34 @@
   }
 
   .project-title p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+  #projects {
+    padding: 40px 10px;
+  }
+
+  .project-heading h1 {
+    font-size: 1.4rem;
+  }
+
+  .project-heading p {
+    font-size: 0.8rem;
+  }
+
+  .project-title h3 {
+    font-size: 1rem;
+  }
+
+  .project-title p {
+    font-size: 0.85rem;
   }
 
   .project-skills span {
-    font-size: 0.8rem;
-    padding: 5px 10px;
+    font-size: 0.72rem;
+    padding: 4px 8px;
   }
 }

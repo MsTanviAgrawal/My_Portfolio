@@ -1,182 +1,170 @@
-
- #education {
+/* =====================
+   EDUCATION SECTION
+===================== */
+#education {
   text-align: center;
   padding: 30px 20px;
-  
+  position: relative;
+  z-index: 1;
 }
 
 .education-section {
-  text-align: center;
-   margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
+/* =====================
+   HEADING
+===================== */
 .education-section h1 {
-   margin-top: 30px;
-  font-size: 2.4rem;
-  text-align: center;
+  margin-top: 20px;
+  font-size: 2.2rem;
   color: #f5f3ff;
-  text-decoration: none;
   position: relative;
 }
 
 .education-section h1::after {
   content: "";
   display: block;
-  width: 90px;
+  width: 80px;
   height: 3px;
-  margin: 10px auto 0;
+  margin: 8px auto 0;
   background: linear-gradient(90deg, #a855f7, #ec4899);
   border-radius: 2px;
 }
 
 .education-section p {
-  font-size: 1.1rem;
-  color: #c0c0c0;
-  margin: 25px auto;
+  font-size: 0.95rem;
+  color: #c7c7d2;
+  margin: 18px auto 35px;
+  max-width: 520px;
 }
 
+/* =====================
+   EDUCATION CARD
+===================== */
 .college {
-  background: #020f31;
-  max-width: 1000px;
-  width: 75%;
-  margin: 1.5em auto;
-  padding: 2em;
-  border-radius: 16px;
-  border: 1px solid #faf9fb;
-  box-shadow: 0 0 20px rgba(168, 85, 247, 0.1);
+  max-width: 760px;              /* reduced */
+  width: 85%;
+  margin: 1.4em auto;
+  padding: 1.5em 1.6em;          /* reduced */
+
   text-align: center;
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(40, 15, 80, 0.88),
+    rgba(15, 5, 35, 0.95)
+  );
+
+  border: 1px solid rgba(168, 85, 247, 0.35);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.55),
+    0 0 28px rgba(168, 85, 247, 0.18);
+
+  backdrop-filter: blur(6px);
+  transition: all 0.35s ease;
 }
 
 .college:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
-  border-color: #d4d2d5;
+  transform: translateY(-5px);
+  box-shadow:
+    0 25px 55px rgba(0, 0, 0, 0.6),
+    0 0 35px rgba(236, 72, 153, 0.35);
+}
+
+/* =====================
+   COLLEGE CONTENT
+===================== */
+.college img {
+  width: 72px;                  /* reduced */
+  height: 72px;
+  margin-bottom: 12px;
+  padding: 6px;
+  border-radius: 50%;
+  object-fit: contain;
+
+  background-color: #ffffff;
+  border: 2px solid #a855f7;
 }
 
 .college h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 1.1em;
-}
-
-.college img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  object-fit: contain;
-  background-color: #fff;
-  padding: 8px;
-  border: 3px solid #a855f7;
-  margin-bottom: 1.1em;
+  font-size: 1.25rem;           /* reduced */
+  font-weight: 600;
+  color: #f5f3ff;
+  margin-bottom: 8px;
 }
 
 .college h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;              /* reduced */
   font-weight: 600;
-  color: #bbeefc;
-  margin-bottom: 0.8em;
+  color: #c7e8ff;
+  margin-bottom: 8px;
 }
 
 .college p {
-  font-size: 1.05rem;
+  font-size: 0.9rem;            /* reduced */
   line-height: 1.6;
-  color: #f5f2f2;
-  margin-top: 0.6em;
+  color: #e5e7eb;
+  margin-top: 6px;
 }
 
 .college p:first-of-type {
-  color: #f970fb;
+  color: #f472b6;
   font-weight: 600;
 }
 
-/* Tablets (<= 1024px) */
+/* =====================
+   RESPONSIVE
+===================== */
+
+/* Tablet */
 @media screen and (max-width: 1024px) {
-  .education-section h1{
-    font-size: 2rem;
+  .education-section h1 {
+    font-size: 1.9rem;
   }
 
-   .education-section p{
+  .education-section p {
     font-size: 0.9rem;
   }
 
   .college {
-    width: 80%;
-    padding: 2em 1.5em;
+    max-width: 700px;
+    padding: 1.4em;
   }
 
   .college h3 {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   }
 
   .college h4 {
-    font-size: 1.1rem;
-  }
-
-  .college p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }
 
+/* Mobile */
 @media screen and (max-width: 768px) {
   #education {
-    padding: 40px 15px;
+    padding: 50px 15px;
   }
 
-  .education-section h1{
+  .education-section h1 {
     font-size: 1.6rem;
   }
 
-   .education-section p{
+  .education-section p {
     font-size: 0.85rem;
   }
 
   .college {
     width: 90%;
-    padding: 1.5em 1em;
-  }
-
-  .college h3 {
-    font-size: 1.2rem;
-  }
-
-  .college h4 {
-    font-size: 1rem;
+    padding: 1.3em 1.2em;
   }
 
   .college img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .college p {
-    font-size: 0.95rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #education {
-    padding: 30px 10px;
-  }
-
-  .education-section h1{
-    font-size: 1.4rem;
-  }
-
-  .education-section p{
-    font-size: 0.85rem;
-  }
-
-  .college {
-    width: 95%;
-    padding: 1.2em 0.8em;
-  }
-
-  .college img {
-    width: 70px;
-    height: 70px;
+    width: 64px;
+    height: 64px;
   }
 
   .college h3 {
@@ -184,11 +172,47 @@
   }
 
   .college h4 {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .college p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
   }
 }
 
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+  #education {
+    padding: 40px 10px;
+  }
+
+  .education-section h1 {
+    font-size: 1.4rem;
+  }
+
+  .education-section p {
+    font-size: 0.8rem;
+  }
+
+  .college {
+    width: 95%;
+    padding: 1.1em 1em;
+  }
+
+  .college img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .college h3 {
+    font-size: 1rem;
+  }
+
+  .college h4 {
+    font-size: 0.85rem;
+  }
+
+  .college p {
+    font-size: 0.85rem;
+  }
+}

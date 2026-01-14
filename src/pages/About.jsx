@@ -3,7 +3,7 @@ import '../StylePages/About.css'
 
 const About = () => {
   return (
-    <section className='about'>
+    <section id='about'>
       <div className='about-heading'>
         <h1>ABOUT ME</h1>
       </div>

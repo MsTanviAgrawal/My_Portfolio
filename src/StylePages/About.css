@@ -1,7 +1,9 @@
 
-.about {
-  justify-content: center;
-  padding: 60px 20px;
+#about {
+  text-align: center;
+  padding: 30px 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .about-heading h1 {
@@ -29,11 +31,11 @@
     rgba(15, 5, 35, 0.9)
   ); 
   /* background: #020f31; */
-  max-width: 950px;
-  width: 85%;
+  max-width: 900px;
+  width: 80%;
   text-align: justify;
    margin: 1.5em auto;
-  padding: 1.6em 2em;
+  padding: 0.5em 1.5em;
   border-radius: 18px;
   border: 1px solid rgba(168, 85, 247, 0.35);
   box-shadow:
