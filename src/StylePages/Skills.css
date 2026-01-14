@@ -59,12 +59,13 @@
     rgba(40, 15, 80, 0.85),
     rgba(15, 5, 35, 0.95)
   );
+  /* background: transparent; */
 
   border: 1px solid rgba(168, 85, 247, 0.35);
 
-  box-shadow:
+  /* box-shadow:
     0 18px 40px rgba(0, 0, 0, 0.55),
-    0 0 28px rgba(168, 85, 247, 0.18);
+    0 0 28px rgba(168, 85, 247, 0.18); */
 
   backdrop-filter: blur(6px);
   transition: all 0.35s ease;
