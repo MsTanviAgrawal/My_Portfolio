@@ -3,6 +3,12 @@ import '../StylePages/Projects.css'
 
 const projects = [
   {
+    title: 'Codesutra AI Website',
+    description: 'For Codesutra.ai, I worked on the frontend architecture and UI implementation, translating design requirements into reusable React components. I focused on responsive design, state management, component reusability, and performance optimization to deliver a seamless user experience on a live production platform.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS' ,'React.JS' ],
+    link:'https://codesutra.ai/'
+  },
+  {
     title: ' Appoint-A Freelancing Website ',
     description: ' I developed a freelancing platform called Appoint using the MERN stack, featuring role-based authentication for both service providers and clients. The platform includes real-time encrypted chat and calling, ensuring secure and seamless communication between users. Additionally, I designed and deployed a fully responsive UI/UX, providing an intuitive experience that enables smooth service hiring, collaboration, and deal management. ',
     tech: ['HTML', 'CSS', 'JavaScript', 'React.JS', 'Redux' , 'Node.js', 'Express', 'MongoDB'],
@@ -10,16 +16,17 @@ const projects = [
   },
   {
     title: 'Mini Projects',
-    description: 'Task Manager is a practical application designed to help users efficiently manage their daily tasks through an intuitive interface. This project demonstrates my ability to build a structured task tracking system where users can create, view, and organize tasks in a logical and accessible way. It showcases clean component structure, state management, and user interaction handling — all essential skills in front-end development.',
+    description: '',
     tech: ['HTML', 'CSS', 'JavaScript', 'React.JS'],
     link:'https://github.com/MsTanviAgrawal/Mini_Projects.git'
   },
   {
     title: 'Task Manager',
-    description: 'Task Manager is a practical application designed to help users efficiently manage their daily tasks through an intuitive interface. This project demonstrates my ability to build a structured task tracking system where users can create, view, and organize tasks in a logical and accessible way. It showcases clean component structure, state management, and user interaction handling — all essential skills in front-end development. This task manager reflects my focus on usability and real-world functionality, making it a strong example of my capability to build useful, interactive applications using modern development practices.',
+    description: 'Task Manager is a practical application designed to help users efficiently manage their daily tasks through an intuitive interface. This project demonstrates my ability to build a structured task tracking system where users can create, view, and organize tasks in a logical and accessible way. It showcases clean component structure, state management, and user interaction handling — all essential skills in front-end development.',
     tech: ['HTML', 'CSS', 'JavaScript', 'React.JS', 'Node.js', 'Express', 'MongoDB'],
     link:'https://github.com/MsTanviAgrawal/Task_Manager.git'
-  }
+  },
+  
 ]
 
 const Projects = () => {

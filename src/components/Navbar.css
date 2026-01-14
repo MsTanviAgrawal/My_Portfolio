@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -72,7 +72,6 @@
   z-index: 1000;
 }
 
-/* ---------------- Responsive Styles ---------------- */
 @media (max-width: 1024px) {
   .navbar-brand {
     font-size: 1.6rem;
@@ -143,7 +142,6 @@
   }
 }
 
-/* Extra Small Devices */
 @media (max-width: 480px) {
   .navbar {
     padding: 0.8rem 1rem;
@@ -162,4 +160,155 @@
     font-size: 1rem;
   }
 }
+ */
 
+
+ /* ================= NAVBAR ================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background: rgba(15, 10, 40, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: white;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1001;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= BRAND ================= */
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 3px 2px 2px rgb(4, 24, 69), 0 0 25px, 0 0 5px rgb(115, 115, 222);
+}
+
+/* ================= DESKTOP MENU ================= */
+.navbar-links.desktop {
+  display: flex;
+  list-style: none;
+  gap: 1.8rem;
+}
+
+.navbar-links.desktop li button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-family: inherit;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links.desktop li button:hover {
+  color: rgb(184, 186, 189);
+  transform: scale(1.1);
+}
+
+/* ================= HAMBURGER ================= */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+/* ================= OVERLAY ================= */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1000;
+}
+
+/* ================= SIDEBAR (MOBILE) ================= */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100vh;
+  background: #1c135f;
+  padding-top: 4.5rem;
+  transition: right 0.3s ease-in-out;
+  z-index: 1001;
+  box-shadow: -2px 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.navbar-links.mobile {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 0 1.5rem;
+}
+
+.navbar-links.mobile li button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px 0;
+  text-align: left;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  font-family: inherit;
+}
+
+.navbar-links.mobile li button:hover {
+  color: rgb(169, 216, 98);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+
+  .navbar-links.desktop {
+    gap: 1.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 750px) {
+  .navbar-links.desktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+
+  .sidebar {
+    width: 220px;
+  }
+
+  .navbar-links.mobile li button {
+    font-size: 1rem;
+  }
+}
