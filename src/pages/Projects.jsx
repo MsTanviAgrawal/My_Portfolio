@@ -16,7 +16,7 @@ const projects = [
   },
   {
     title: 'Mini Projects',
-    description: '',
+    description: 'This project is a collection of daily mini-apps built to practice and improve my frontend development skills. It showcases my ability to build React UI components, implement dynamic JavaScript logic, and create clean, reusable code patterns for real-world interaction. Each mini-project demonstrates responsive UI design, component structuring, and practical problem-solving using modern web technologies.',
     tech: ['HTML', 'CSS', 'JavaScript', 'React.JS'],
     link:'https://github.com/MsTanviAgrawal/Mini_Projects.git'
   },
@@ -33,7 +33,7 @@ const Projects = () => {
   return (
     <section id='projects'>
       <div className='project-heading'>
-        <h1>MY PROJECTS</h1>
+        <h1>PROJECTS</h1>
         <p>
           A showcase of the projects I have worked on, highlighting my skills
           and experience in various technologies

@@ -19,7 +19,8 @@
 }
 .greeting{
   font-size: 4.5rem; 
-  color: #3f055c;
+  /* color: #3f055c; */
+  color: #bb51ef;
   font-weight: bold;
   text-shadow: 0 2px 10px rgba(63, 5, 92, 0.2);
   transition: text-shadow 0.3s ease;
@@ -28,7 +29,7 @@
 
 .developer{
     display: inline-block;
-    color: #ffa3fc;
+    color: #f181ee;
     white-space: nowrap;
     width: 100%;
     margin-top: 10px;
