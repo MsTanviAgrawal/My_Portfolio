@@ -9,22 +9,20 @@
 
 /* Heading - Reduced size */
 .about-heading h1 {
-  margin-top: 0;
-  /* Reduced range: 1.3rem to 2rem */
-  font-size: clamp(1.3rem, 4vw, 2rem);
-  text-align: center;
+   margin-top: 0;
+  /* Fluid font size */
+  font-size: clamp(1.4rem, 5vw, 2.2rem);
   color: #f5f3ff;
-  text-decoration: none;
   position: relative;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .about-heading h1::after {
   content: "";
   display: block;
-  width: clamp(40px, 8vw, 70px); /* Smaller underline */
-  height: 2.5px;
-  margin: 8px auto 0;
+  width: clamp(50px, 8vw, 80px);
+  height: 3px;
+  margin: 10px auto 0;
   background: linear-gradient(90deg, #a855f7, #ec4899);
   border-radius: 2px;
 }

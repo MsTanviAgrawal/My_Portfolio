@@ -1,269 +1,158 @@
-.first{
-    width: auto;
+/* =====================
+   HERO SECTION (.first)
+===================== */
+.first {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Better centering */
     align-items: center;
-    margin-bottom: 10em ;
-    margin-top: 150px;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    /* Fluid vertical spacing */
+    margin-top: clamp(80px, 15vh, 150px);
+    margin-bottom: clamp(40px, 10vh, 100px);
+    padding: 0 5%;
+    gap: 2rem;
+    
+    transition: all 0.3s ease;
     will-change: transform;
-    transform: translateZ(0);
-    backface-visibility: hidden;
     perspective: 1000px;
 }
-.leftSection{ 
- 
-    font-size: 3.5rem;
-    margin-top: 40px;
-   
-}
-.greeting{
-  font-size: 4.5rem; 
-  /* color: #3f055c; */
-  color: #bb51ef;
-  font-weight: bold;
-  text-shadow: 0 2px 10px rgba(63, 5, 92, 0.2);
-  transition: text-shadow 0.3s ease;
+
+/* Individual Content Divs */
+.first > div {
+    width: 45%;
+    margin: 0; /* Removed fixed 100px margin */
 }
 
+/* =====================
+   LEFT SECTION (Text)
+===================== */
+.leftSection { 
+    /* Scales between 1.5rem and 3.5rem */
+    font-size: clamp(1.5rem, 4vw, 3.5rem);
+    margin-top: 0;
+}
 
-.developer{
+.greeting {
+    /* Scales between 2.2rem and 4.5rem */
+    font-size: clamp(2.2rem, 6vw, 4.5rem); 
+    color: #bb51ef;
+    font-weight: bold;
+    text-shadow: 0 2px 10px rgba(63, 5, 92, 0.2);
+    line-height: 1.1;
+}
+
+.name {
+    font-family: 'Copperplate Gothic Light', serif;
+}
+
+.developer {
     display: inline-block;
     color: #f181ee;
     white-space: nowrap;
     width: 100%;
     margin-top: 10px;
+    font-size: 0.5em; /* Scaled relative to parent font-size */
 }
 
-.first > div{
-    width: 45% ;
-    margin: auto;
-    margin-left: 100px;
-}
-.name{
-  font-family: Copperplate Gothic Light;
-}
-
-.typed-cursor {
-  display: none !important;
-}
-.leftSection .buttons{
-  padding: 20px 0 ;
-  margin-top: 10px; 
-  font-size: 1.5rem; 
-}
-.buttons a{
-  display: inline-block;
-  margin: 8px;
-  padding: 12px 18px;
-  border: 2px solid white;
-  border-radius: 20px;
-  color: white;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  will-change: transform;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-}
-.buttons .download-resume{
-  padding: 12px 18px;
-  background: linear-gradient(90deg, #8245ec, #a855f7);
-  text-decoration: none;
-  font-weight: 500;
-  color: rgb(232, 226, 232);
-  border: 2px solid white;
-  border-radius: 20px;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  will-change: transform;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Buttons Container */
+.leftSection .buttons {
+    padding: 1.5rem 0;
+    margin-top: 10px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
-.buttons a:hover{
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  will-change: transform;
-  background: rgba(255, 255, 255, 0.1);
+.buttons a, .buttons .download-resume {
+    display: inline-block;
+    padding: clamp(10px, 2vw, 12px) clamp(16px, 3vw, 24px);
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(0.85rem, 1.5vw, 1.1rem);
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform: translateZ(0);
 }
 
-.rightSection{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  padding-left: 40px;
-  margin-top: 20px;  
+.buttons .download-resume {
+    background: linear-gradient(90deg, #8245ec, #a855f7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* =====================
+   RIGHT SECTION (Image)
+===================== */
+.rightSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rightSection img {
-  margin: auto;
-  width: 450px;
-  height: 450px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15),
-              0 8px 40px rgba(255, 255, 255, 0.1);
-  transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-  will-change: box-shadow, transform;
-  backface-visibility: hidden;
-  transform: translateZ(0);
+    /* Fluid image sizing: min 220px, max 450px */
+    width: clamp(220px, 35vw, 450px);
+    height: clamp(220px, 35vw, 450px);
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
+    transform: translateZ(0);
 }
+
 .rightSection img:hover {
-  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.3),
-              0 12px 60px rgba(255, 255, 255, 0.2);
-  transform: scale(1.03) translateZ(0);
-  filter: brightness(1.05);
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .first {
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-    margin-top: 100px;
-  }
-
-  .first > div {
-    width: 80%;
-    margin-left: 0;
-  }
-
-  .leftSection {
-    font-size: 2.5rem;
-    margin-top: 30px;
-  }
-
-  .developer {
-    font-size: 1.5rem;
-    width: 100%;
-  }
-
-  .buttons {
-    font-size: 1.2rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .buttons a,
-  .buttons .download-resume {
-    padding: 14px;
-    margin: 8px;
-    font-size: 1rem;
-  }
-
-  .rightSection img {
-    width: 350px;
-    height: 350px;
-    margin-top: 10px;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .leftSection {
-    font-size: 3rem;
-    margin-top: 50px;
-  }
-
-  .developer {
-    font-size: 1.8rem;
-  }
-
-  .rightSection img {
-    width: 450px;
-    height: 450px;
-  }
-
-  .buttons a,
-  .buttons .download-resume {
-    font-size: 1.1rem;
-    padding: 14px 20px;
-  }
-}
-
-@media screen and (min-width: 300px) and (max-width: 770px) {
-  .first{
-    width: 100%;
-    height: fit-content;
-    margin-top: 80px;
-    margin-bottom: 30px;
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    will-change: transform;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-
-  .first > div {
-    width: 90%;
-    margin-left: 0;
-  }
-
-  .leftSection {
-    font-size: 1.5rem;
-    margin-top: 20px;
-  }
-
-  .greeting {
-    font-size: 2.5rem;
-    text-shadow: 0 2px 6px rgba(63, 5, 92, 0.2);
-    transition: text-shadow 0.3s ease;
-  }
-
-  .developer {
-    font-size: 1rem;
-    width: 100%;
-    margin-top: 5px;
-  }
-
-  .buttons {
-    font-size: 0.9rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .buttons a,
-  .buttons .download-resume {
-    padding: 8px 14px;
-    margin: 5px;
-    font-size: 0.85rem;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    will-change: transform;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-  }
-
-  .buttons .download-resume {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  .buttons a:hover {
-    transform: scale(1.05);
-    background: rgba(255, 255, 255, 0.1);
-  }
-
-  .rightSection {
-    padding-left: 0;
-  }
-
-  .rightSection img {
-    width: 220px;
-    height: 220px;
-    margin-top: 10px;
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    will-change: transform, box-shadow;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-  }
-
-  .rightSection img:hover {
-    transform: scale(1.03) translateZ(0);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.25);
+    transform: scale(1.03);
     filter: brightness(1.05);
-  }
+}
+
+/* =====================
+   RESPONSIVE BREAKPOINTS
+==================== */
+
+/* Tablet (Laptops/Tablets) */
+@media screen and (max-width: 1024px) {
+    .first {
+        flex-direction: column-reverse; /* Image on top for mobile */
+        text-align: center;
+        margin-top: 100px;
+        gap: 1rem;
+    }
+
+    .first > div {
+        width: 90%;
+    }
+
+    .leftSection .buttons {
+        justify-content: center;
+    }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+    .first {
+        margin-top: 80px;
+        padding: 0 5px;
+    }
+
+    .rightSection img {
+        width: 200px; /* Force smaller size on tiny screens */
+        height: 200px;
+    }
+
+    .greeting {
+        text-shadow: 0 2px 6px rgba(63, 5, 92, 0.2);
+    }
+}
+
+/* Utilitarian Fixes */
+.typed-cursor {
+    display: none !important;
 }

@@ -1,7 +1,11 @@
+/* =====================
+   FOOTER SECTION
+===================== */
 footer {
   position: relative;
   color: #eaeaf0;
-  padding: 2.6rem 1rem 2rem;
+  /* Fluid padding: min 20px, max 60px */
+  padding: clamp(20px, 5vh, 10px) 15px 25px;
   text-align: center;
   font-family: "Poppins", sans-serif;
   background: linear-gradient(
@@ -11,10 +15,9 @@ footer {
   );
 
   border-top: 1px solid rgba(168, 85, 247, 0.35);
-
   box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.6), 0 0 35px rgba(168, 85, 247, 0.15);
-
   backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   overflow: hidden;
 }
 
@@ -23,168 +26,132 @@ footer::before {
   position: absolute;
   inset: 0;
   background: radial-gradient(
-      400px circle at 20% 20%,
-      rgba(168, 85, 247, 0.18),
+      min(400px, 80vw) circle at 20% 20%,
+      rgba(168, 85, 247, 0.12),
       transparent 40%
     ),
     radial-gradient(
-      400px circle at 80% 80%,
-      rgba(236, 72, 153, 0.18),
+      min(400px, 80vw) circle at 80% 80%,
+      rgba(236, 72, 153, 0.12),
       transparent 40%
     );
   pointer-events: none;
   z-index: 0;
 }
+
 footer * {
   position: relative;
   z-index: 1;
 }
 
 .footer-section {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
+/* FOOTER LOGO/NAME */
 .footer-section h2 {
-  font-size: 2rem;
+  margin-top: 0;
+  font-size: clamp(1.5rem, 5vw, 2rem);
   font-weight: 800;
   font-family: "Times New Roman", serif;
-  letter-spacing: 1px;
-  margin-bottom: 1.4rem;
-  font-weight: 800;
   letter-spacing: 0.6px;
-
-  /* background: linear-gradient(90deg, #a855f7, #ec4899); */
-  /* -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
-  /* background-clip: text; */
-  /* padding-bottom: 20px; */
+  margin-bottom: 1rem;
   color: rgb(89, 212, 231);
-  text-shadow: 4px 3px 3px rgb(0, 0, 0);
-   /* text-shadow: 2px 1px rgb(232, 232, 232); */
-   white-space: nowrap;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
 }
 
+/* NAVIGATION BUTTONS */
 .footer-details {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  gap: clamp(0.5rem, 1.5vw, 1.5rem);
+  margin-bottom: 1.2rem;
 }
 
 .footer-details button {
   background: transparent;
   border: none;
   color: #d1d5db;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 1.8vw, 0.95rem);
   cursor: pointer;
   transition: color 0.3s, transform 0.3s;
   font-weight: 500;
 }
 
 .footer-details button:hover {
-   color: #f472b6;
+  color: #f472b6;
   transform: translateY(-2px);
 }
 
+/* SOCIAL MEDIA ICONS */
 .social-media {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-bottom: 1.2rem;
+  gap: clamp(1rem, 3vw, 1.8rem);
+  margin-bottom: 1rem;
 }
 
 .social-media a {
   color: #e5e7eb;
-  font-size: 1.6rem;
+  /* Fluid icon sizing */
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
   transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .social-media a:hover {
   color: #a855f7;
-  transform: scale(1.15);
-  text-shadow: 0 0 12px rgba(168, 85, 247, 0.8);
+  transform: translateY(-3px) scale(1.1);
+  text-shadow: 0 0 12px rgba(168, 85, 247, 0.6);
 }
 
+/* COPYRIGHT TEXT */
 footer .copyright {
-  font-size: 1.05rem;
+  font-size: clamp(0.7rem, 1.5vw, 0.85rem);
   color: #cbd5f5;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
+  opacity: 0.9;
 }
 
 footer .copyright a {
   color: #fde68a;
-  margin-left: 5px;
+  margin-left: 3px;
   text-decoration: none;
+  font-weight: 500;
 }
 
 footer .copyright a:hover {
   text-decoration: underline;
+  color: #ffffff;
 }
 
-/* Tablet and smaller (≤1024px) */
-@media (max-width: 1024px) {
-  footer {
-    padding: 2.5rem 1rem 2rem;
-  }
+/* =====================
+   MOBILE OPTIMIZATIONS
+===================== */
 
-  .footer-section h2 {
-    font-size: 1.6rem;
-  }
-
-  .footer-details {
-    gap: 1.2rem;
-  }
-
-  .footer-details button {
-    font-size: 0.95rem;
-  }
-
-  .social-media {
-    gap: 1.2rem;
-  }
-
-  .social-media a {
-    font-size: 1.4rem;
-  }
-
-  footer .copyright {
-    font-size: 0.8rem;
-  }
-}
-
-/* Mobile (≤600px) */
 @media (max-width: 600px) {
   footer {
-    padding: 2rem 1rem 1.5rem;
-  }
-
-  .footer-section h2 {
-    font-size: 1.4rem;
+    padding: 30px 10px 20px;
   }
 
   .footer-details {
-    gap: 0.8rem;
-    flex-direction: column;
-    align-items: center;
+    /* Stack links on very narrow screens if they don't fit */
+    gap: 12px;
   }
 
   .footer-details button {
-    font-size: 0.95rem;
+    padding: 10px 2px ;
   }
 
   .social-media {
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .social-media a {
-    font-size: 1.3rem;
+    gap: 20px;
   }
 
   footer .copyright {
-    font-size: 0.6rem;
+    line-height: 1.6;
+    padding: 0 10px;
   }
 }

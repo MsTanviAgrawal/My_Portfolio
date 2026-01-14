@@ -3,46 +3,52 @@
 ===================== */
 #skills {
   text-align: center;
-  padding: 30px 20px;
+  padding: clamp(40px, 4vh, 60px) 15px; 
   position: relative;
   z-index: 1;
-  
+  overflow-x: hidden;
 }
 
 /* =====================
    HEADING
 ===================== */
 .skills-heading h1 {
-  margin-top: 20px;
-  font-size: 2.2rem;
+  margin-top: 0;
+  /* Fluid font size */
+  font-size: clamp(1.4rem, 5vw, 2.2rem);
   color: #f5f3ff;
   position: relative;
+  line-height: 1.2;
 }
 
 .skills-heading h1::after {
   content: "";
   display: block;
-  width: 80px;
+  width: clamp(50px, 8vw, 80px);
   height: 3px;
-  margin: 8px auto 0;
+  margin: 10px auto 0;
   background: linear-gradient(90deg, #a855f7, #ec4899);
   border-radius: 2px;
 }
 
 .skills-heading p {
-  font-size: 0.95rem;
+  /* Fluid font size */
+  font-size: clamp(0.8rem, 2vw, 0.95rem);
   color: #c7c7d2;
-  margin: 18px auto 35px;
+  margin: 1.2rem auto 2.5rem;
   max-width: 520px;
+  line-height: 1.5;
+  padding: 0 10px;
 }
 
 /* =====================
-   GRID
+   GRID - Fluid & Responsive
 ===================== */
 .sills-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* reduced */
-  gap: 28px; 
+  /* Automatically adjusts columns; cards won't break on small screens */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: clamp(15px, 3vw, 28px); 
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -52,180 +58,108 @@
 ===================== */
 .skills-title {
   border-radius: 16px;
-  padding-bottom: 14px;
-
+  padding-bottom: 1rem;
   background: linear-gradient(
     180deg,
     rgba(40, 15, 80, 0.85),
     rgba(15, 5, 35, 0.95)
   );
-  /* background: transparent; */
   border: 1px solid rgba(168, 85, 247, 0.35);
   backdrop-filter: blur(6px);
-  transition: all 0.35s ease;
+  -webkit-backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skills-title:hover {
-  transform: translateY(-5px);
-  box-shadow:
-    0 25px 55px rgba(0, 0, 0, 0.6),
-    0 0 35px rgba(236, 72, 153, 0.35);
+@media (hover: hover) {
+  .skills-title:hover {
+    transform: translateY(-6px);
+    box-shadow:
+      0 20px 45px rgba(0, 0, 0, 0.6),
+      0 0 30px rgba(236, 72, 153, 0.3);
+  }
 }
 
-/* =====================
-   CARD TITLE
-===================== */
+/* CARD TITLE */
 .skills-title h3 {
-  font-size: 1.45rem; /* reduced */
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
   color: #f5f3ff;
-  padding: 18px 10px 12px;
-  margin-bottom: 10px;
+  padding: 1.2rem 10px 0.8rem;
+  margin-bottom: 5px;
+  font-weight: 600;
 }
 
 /* =====================
-   SKILL CHIPS
+   SKILL CHIPS (The individual tech badges)
 ===================== */
 .skills-nameLogo {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* reduced */
+  gap: clamp(6px, 1.5vw, 10px);
   justify-content: center;
-  margin: 0 12px 18px;
+  margin: 0 10px 1rem;
 }
 
 .skills-nameLogo div {
   display: flex;
   align-items: center;
   gap: 8px;
-
-  padding: 8px 12px; /* reduced */
-
+  padding: clamp(6px, 1.2vw, 8px) clamp(10px, 2vw, 14px);
   border-radius: 999px;
-
   background: rgba(30, 20, 60, 0.9);
-
   border: 1px solid rgba(168, 85, 247, 0.3);
-
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
-
   transition: all 0.3s ease;
 }
 
 .skills-nameLogo div:hover {
   background: rgba(50, 30, 90, 0.95);
-  transform: translateY(-2px);
+  border-color: rgba(236, 72, 153, 0.5);
 }
 
-/* =====================
-   ICON + TEXT
-===================== */
+/* ICON + TEXT */
 .skills-logo {
-  width: 32px; /* reduced */
-  height: 28px;
+  /* Scales based on text size */
+  width: auto;
+  height: clamp(1.2rem, 2.5vw, 1.6rem); 
+  max-width: 32px;
   object-fit: contain;
 }
 
 .skills-name {
   color: #e5e7eb;
-  font-size: 0.85rem; /* reduced */
+  font-size: clamp(0.75rem, 1.8vw, 0.85rem);
   font-weight: 500;
+  white-space: nowrap;
 }
 
 /* =====================
-   RESPONSIVE
+   MOBILE OPTIMIZATIONS
 ===================== */
 
-/* Tablet */
-@media screen and (max-width: 1024px) {
-  .skills-heading h1 {
-    font-size: 1.9rem;
-  }
-
-  .skills-heading p {
-    font-size: 0.9rem;
-  }
-
-  .skills-title h3 {
-    font-size: 1.35rem;
-  }
-
-  .skills-logo {
-    width: 30px;
-    height: 26px;
-  }
-
-  .skills-name {
-    font-size: 0.83rem;
-  }
-}
-
-/* Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   #skills {
-    padding: 50px 15px;
+    padding: 30px 10px;
   }
 
   .skills-heading h1 {
-    font-size: 1.6rem;
+    margin-bottom: 5px;
   }
 
   .skills-heading p {
-    font-size: 0.85rem;
-    margin-bottom: 25px;
+    margin-top: 0.8rem;
+    margin-bottom: 1.5rem;
   }
 
   .sills-section {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    width: 85%; /* More space for the grid on tiny screens */
+    gap: 15px;
   }
 
-  .skills-title h3 {
-    font-size: 1.3rem;
+  .skills-title {
+    border-radius: 12px;
   }
-
+  
   .skills-nameLogo {
-    gap: 8px;
-  }
-
-  .skills-logo {
-    width: 28px;
-    height: 24px;
-  }
-
-  .skills-name {
-    font-size: 0.82rem;
-  }
-}
-
-/* Small Mobile */
-@media screen and (max-width: 480px) {
-  #skills {
-    padding: 40px 10px;
-  }
-
-  .skills-heading h1 {
-    font-size: 1.4rem;
-  }
-
-  .skills-heading p {
-    font-size: 0.8rem;
-  }
-
-  .skills-title h3 {
-    font-size: 1.2rem;
-  }
-
-  .skills-nameLogo {
-    gap: 7px;
-    margin: 0 8px 15px;
-  }
-
-  .skills-logo {
-    width: 26px;
-    height: 22px;
-  }
-
-  .skills-name {
-    font-size: 0.8rem;
+     margin: 0 5px 0.8rem;
   }
 }

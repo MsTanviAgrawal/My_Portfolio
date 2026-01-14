@@ -2,37 +2,42 @@
    PROJECTS SECTION
 ===================== */
 #projects {
-  padding: 30px 20px;
+  justify-content: center;
   text-align: center;
+  padding: clamp(40px, 4vh, 60px) 15px; /* Reduced vertical padding */
   position: relative;
   z-index: 1;
+  overflow-x: hidden; 
 }
 
 /* =====================
    HEADING
 ===================== */
 .project-heading h1 {
-  margin-top: 20px;
-  font-size: 2.2rem;
+  margin-top: 0;
+  /* Fluid font size */
+  font-size: clamp(1.4rem, 5vw, 2.2rem);
   color: #f5f3ff;
   position: relative;
+  line-height: 1.2;
 }
 
 .project-heading h1::after {
   content: "";
   display: block;
-  width: 80px;
+  width: clamp(50px, 8vw, 80px);
   height: 3px;
-  margin: 8px auto 0;
+  margin: 10px auto 0;
   background: linear-gradient(90deg, #a855f7, #ec4899);
   border-radius: 2px;
 }
 
 .project-heading p {
-  font-size: 0.95rem;
+  font-size: clamp(0.75rem, 1.8vw, 0.85rem); /* Smaller text */
   color: #c7c7d2;
-  margin: 18px auto 35px;
-  max-width: 560px;
+  margin: 0.8rem auto 1.8rem;
+  max-width: 480px; /* Narrower width */
+  line-height: 1.4;
 }
 
 /* =====================
@@ -42,69 +47,64 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 32px; /* reduced */
-  max-width: 1200px; /* reduced */
+  gap: clamp(30px, 2vw, 20px); /* Reduced gap */
+  max-width: 1000px; /* More compact container */
   margin: 0 auto;
 }
 
 /* =====================
-   PROJECT CARD
+   PROJECT CARD (Smaller & Uniform)
 ===================== */
 .project-title {
-  width: 80%;
-  max-width: 360px; 
-  min-height: 315px; 
-  padding: 16px 18px;
+  /* Smaller base width: 280px */
+  flex: 1 1 280px; 
+  max-width: 310px; /* Reduced from 360px */
+  
+  /* Reduced height */
+  min-height: 330px; 
+  
+  padding: clamp(1rem, 2vw, 1.2rem); /* Tighter padding */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   text-align: left;
-  border-radius: 16px;
+  border-radius: 12px; /* Slightly sharper corners for smaller size */
   background: linear-gradient(
     180deg,
     rgba(40, 15, 80, 0.88),
     rgba(15, 5, 35, 0.95)
   );
 
-  border: 1px solid rgba(168, 85, 247, 0.35);
-
-  box-shadow:
-    0 18px 40px rgba(0, 0, 0, 0.55),
-    0 0 28px rgba(168, 85, 247, 0.18);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
 
   backdrop-filter: blur(6px);
-  transition: all 0.35s ease;
+  -webkit-backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-title:hover {
-  transform: translateY(-6px);
-  box-shadow:
-    0 25px 55px rgba(0, 0, 0, 0.6),
-    0 0 35px rgba(236, 72, 153, 0.35);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.55);
 }
 
-/* =====================
-   PROJECT TITLE
-===================== */
+/* PROJECT TITLE */
 .project-title h3 {
   text-align: center;
-  font-size: 1.15rem; /* reduced */
+  font-size: clamp(0.9rem, 2vw, 1.05rem); /* Reduced size */
   color: #f5f3ff;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-/* =====================
-   DESCRIPTION
-===================== */
+/* DESCRIPTION */
 .project-title p {
-  font-size: 0.9rem; /* reduced */
+  font-size: clamp(0.8rem, 1.6vw, 0.85rem); /* Reduced size */
   color: #e5e7eb;
-  line-height: 1.6;
+  line-height: 1.5;
   text-align: justify;
-  flex-grow: 1;
   margin-bottom: 12px;
+  flex-grow: 1; 
 }
 
 /* =====================
@@ -113,29 +113,27 @@
 .project-skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* reduced */
-  margin: 14px 0 10px;
+  gap: 6px;
+  margin-bottom: 15px;
 }
 
 .project-skills span {
-  font-size: 0.75rem; /* reduced */
-  padding: 5px 10px;
+  font-size: 0.68rem; /* Smaller chips */
+  padding: 3px 8px;
   border-radius: 999px;
-
   background: rgba(30, 20, 60, 0.85);
-  color: #e5e7eb;
-
-  border: 1px solid rgba(168, 85, 247, 0.4);
+  color: #d1d5db;
+  border: 1px solid rgba(168, 85, 247, 0.3);
 }
 
 /* =====================
-   VIEW PROJECT BUTTON
+   VIEW PROJECT BUTTON (Pinned to Bottom)
 ===================== */
 .view-project {
   display: block;
-  margin-top: 16px;
-  padding: 9px 0;
-  font-size: 0.9rem;
+  margin-top: 5%; 
+  padding: 8px 0; /* Thinner button */
+  font-size: 0.8rem; /* Smaller font */
   font-weight: 600;
   text-align: center;
   text-decoration: none;
@@ -145,82 +143,34 @@
   transition: all 0.3s ease;
 }
 
-.view-project:hover {
-  background: linear-gradient(90deg, #9333ea, #db2777);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.45);
-}
-
 /* =====================
-   RESPONSIVE
+   RESPONSIVE OVERRIDES
 ===================== */
 
-/* Tablet */
-@media screen and (max-width: 1024px) {
-  .project-heading h1 {
-    font-size: 1.9rem;
+@media screen and (max-width: 768px) {
+  .project-title {
+    flex-basis: 90%; /* Take up most width on small tablets/mobile */
+    max-width: 340px; /* Prevent them from getting too huge on mobile */
+    min-height: auto; 
   }
 
-  .project-heading p {
-    font-size: 0.9rem;
-  }
-
-  .project-section {
-    gap: 26px;
+  .project-title p {
+    text-align: left;
   }
 }
 
-/* Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   #projects {
-    padding: 50px 15px;
-  }
-
-  .project-heading h1 {
-    font-size: 1.6rem;
-  }
-
-  .project-heading p {
-    font-size: 0.85rem;
+    padding: 20px 15px;
+    
   }
 
   .project-title {
-    max-width: 100%;
+    width: 85%;
+    padding: 1rem;
   }
-
-  .project-title h3 {
-    font-size: 1.1rem;
-  }
-
-  .project-title p {
-    font-size: 0.88rem;
-  }
-}
-
-/* Small Mobile */
-@media screen and (max-width: 480px) {
-  #projects {
-    padding: 40px 10px;
-  }
-
-  .project-heading h1 {
-    font-size: 1.4rem;
-  }
-
-  .project-heading p {
-    font-size: 0.8rem;
-  }
-
-  .project-title h3 {
-    font-size: 1rem;
-  }
-
-  .project-title p {
-    font-size: 0.85rem;
-  }
-
-  .project-skills span {
-    font-size: 0.72rem;
-    padding: 4px 8px;
+  
+  .project-section {
+    gap: 15px;
   }
 }
