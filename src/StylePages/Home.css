@@ -63,20 +63,21 @@
     gap: 12px;
 }
 
-.buttons a, .buttons .download-resume {
+.buttons a{
     display: inline-block;
-    padding: clamp(10px, 2vw, 12px) clamp(16px, 3vw, 24px);
+    padding: clamp(12px, 1.6vw, 2px) clamp(20px, 3vw, 20px);
     border: 2px solid white;
     border-radius: 20px;
     color: white;
     text-decoration: none;
-    font-size: clamp(0.85rem, 1.5vw, 1.1rem);
+    font-size: clamp(0.85rem, 2vw, 1.4rem);
     font-weight: 500;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     transform: translateZ(0);
 }
 
 .buttons .download-resume {
+    
     background: linear-gradient(90deg, #8245ec, #a855f7);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

@@ -48,7 +48,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: clamp(30px, 2vw, 20px); /* Reduced gap */
-  max-width: 1000px; /* More compact container */
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -162,15 +162,16 @@
 @media screen and (max-width: 480px) {
   #projects {
     padding: 20px 15px;
-    
   }
 
   .project-title {
-    width: 85%;
+    /* width: 85%; */
     padding: 1rem;
   }
   
   .project-section {
     gap: 15px;
   }
+
+
 }
