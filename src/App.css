@@ -11,6 +11,7 @@ body {
  
   margin: 0;
   min-height: 100vh;
+  /* min-width: 80vw; */
   background:
     radial-gradient(600px circle at 20% 20%, rgba(168, 85, 247, 0.25), transparent 40%),
     radial-gradient(500px circle at 80% 30%, rgba(236, 72, 153, 0.25), transparent 45%),

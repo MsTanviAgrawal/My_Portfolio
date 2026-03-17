@@ -1,9 +1,8 @@
 import React from "react";
-import '../components/Footer.css';
-import { FaFacebook, FaLinkedin, FaInstagram,} from "react-icons/fa";
+import "../components/Footer.css";
+import { FaFacebook, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
-
   const handleScroll = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -12,12 +11,11 @@ const Footer = () => {
   };
 
   return (
-    <footer >
+    <footer>
       <div className="footer-section">
-       
         <h2>Tanvi Agrawal</h2>
 
-        <nav className="footer-details" >
+        <nav className="footer-details">
           {[
             { name: "Home", id: "home" },
             { name: "About", id: "about" },
@@ -25,10 +23,7 @@ const Footer = () => {
             { name: "Projects", id: "projects" },
             { name: "Education", id: "education" },
           ].map((item) => (
-            <button
-              key={item.id}
-              onClick={() => handleScroll(item.id)}
-            >
+            <button key={item.id} onClick={() => handleScroll(item.id)}>
               {item.name}
             </button>
           ))}
@@ -36,11 +31,22 @@ const Footer = () => {
 
         <div className="social-media">
           {[
-            { icon: <FaFacebook />, link: "https://www.facebook.com/tanvi.agrawal.1000" },
+            {
+              icon: <FaLinkedin />,
+              link: "https://www.linkedin.com/in/tanvi-agrawal-04a325236/",
+            },
+            { icon: <FaGithub />, 
+              link: "https://github.com/MsTanviAgrawal" 
+            },
+            {
+              icon: <FaFacebook />,
+              link: "https://www.facebook.com/tanvi.agrawal.1000",
+            },
             // { icon: <FaGmail />, link: " /" },
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/tanvi-agrawal-04a325236/" },
-            { icon: <FaInstagram />, link: "https://www.instagram.com/_tanvi.agrawal__/" },
-            
+            {
+              icon: <FaInstagram />,
+              link: "https://www.instagram.com/_tanvi.agrawal__/",
+            },
           ].map((item, index) => (
             <a
               key={index}
@@ -55,7 +61,10 @@ const Footer = () => {
 
         <p className="copyright">
           © 2025 Frontend Developer/
-          <a href="mailto:tanviagrawal9913@gmail.com">tanviagrawal9913@gmail.com</a> /All rights reserved.
+          <a href="mailto:tanviagrawal9913@gmail.com">
+            tanviagrawal9913@gmail.com
+          </a>{" "}
+          /All rights reserved.
         </p>
       </div>
     </footer>

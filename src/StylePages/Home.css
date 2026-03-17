@@ -2,12 +2,12 @@
    HERO SECTION (.first)
 ===================== */
 .first {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center; /* Better centering */
     align-items: center;
     /* Fluid vertical spacing */
-    margin-top: clamp(80px, 15vh, 150px);
+    margin-top: clamp(80px, 25vh, 150px);
     margin-bottom: clamp(40px, 10vh, 100px);
     padding: 0 5%;
     gap: 2rem;
