@@ -13,9 +13,11 @@ body {
   min-height: 100vh;
   /* min-width: 80vw; */
   background:
-    radial-gradient(600px circle at 20% 20%, rgba(168, 85, 247, 0.25), transparent 40%),
-    radial-gradient(500px circle at 80% 30%, rgba(236, 72, 153, 0.25), transparent 45%),
-    radial-gradient(600px circle at 70% 80%, rgba(59, 130, 246, 0.25), transparent 40%),
+    radial-gradient(600px circle at 15% 20%, rgba(168, 85, 247, 0.25), transparent 40%),
+    radial-gradient(500px circle at 85% 30%, rgba(236, 72, 153, 0.25), transparent 45%),
+     radial-gradient(600px circle at 25% 48%, rgba(168, 85, 247, 0.25), transparent 40%),
+    radial-gradient(600px circle at 75% 70%, rgba(59, 130, 246, 0.25), transparent 40%),
+    radial-gradient(500px circle at 27% 86%, rgba(236, 72, 153, 0.25), transparent 45%),
     linear-gradient(180deg, #0b0014 0%, #14001f 40%, #090012 100%);
    color: white;
   font-family: "Times New Roman", Times, serif;

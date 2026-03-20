@@ -143,6 +143,13 @@
   transition: all 0.3s ease;
 }
 
+.view-project:hover {
+ background: linear-gradient(90deg, #9333ea, #db2777);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(218, 64, 141, 0.2);
+
+}
+
 /* =====================
    RESPONSIVE OVERRIDES
 ===================== */
