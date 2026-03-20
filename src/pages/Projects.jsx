@@ -2,11 +2,24 @@ import React from 'react'
 import '../StylePages/Projects.css'
 
 const projects = [
+  // {
+  //   title: 'Codesutra AI Website',
+  //   description: 'For Codesutra.ai, I worked on the frontend architecture and UI implementation, translating design requirements into reusable React components. I focused on responsive design, state management, component reusability, and performance optimization to deliver a seamless user experience on a live production platform.',
+  //   tech: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS' ,'React.JS' ],
+  //   link:'https://codesutra.ai/'
+  // },
+ 
   {
-    title: 'Codesutra AI Website',
-    description: 'For Codesutra.ai, I worked on the frontend architecture and UI implementation, translating design requirements into reusable React components. I focused on responsive design, state management, component reusability, and performance optimization to deliver a seamless user experience on a live production platform.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS' ,'React.JS' ],
-    link:'https://codesutra.ai/'
+    title: 'Algonyx Technologies - Official Website',
+    description: 'Developed and designed the official company website for a growing IT services firm using React.js, focusing on building responsive, modern UI components and ensuring a seamless user experience across devices. Contributed to delivering a clean and professional digital presence aligned with the company’s vision of scalable and innovative technology solutions.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS' ,'React.JS', 'Redux' ],
+    link:'https://www.algonyxtechnologies.com'
+  },
+  {
+    title: 'PawPilot App',
+    description: 'Developed a scalable and feature-rich pet care super app using React Native and TypeScript, integrating tracking, AI-powered health insights, training modules, marketplace, and social features into a seamless user experience. Focused on building responsive UI components and delivering a smooth, production-grade mobile application.',
+    tech: [ 'React Native', 'TypeScript', 'JavaScript', 'Redux'  ],
+    link:'#'
   },
   {
     title: ' Appoint-A Freelancing Website ',
@@ -14,18 +27,19 @@ const projects = [
     tech: ['HTML', 'CSS', 'JavaScript', 'React.JS', 'Redux' , 'Node.js', 'Express', 'MongoDB'],
     link: '#'
   },
-  {
-    title: 'Mini Projects',
-    description: 'This project is a collection of daily mini-apps built to practice and improve my frontend development skills. It showcases my ability to build React UI components, implement dynamic JavaScript logic, and create clean, reusable code patterns for real-world interaction. Each mini-project demonstrates responsive UI design, component structuring, and practical problem-solving using modern web technologies.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'React.JS'],
-    link:'https://github.com/MsTanviAgrawal/Mini_Projects.git'
-  },
+ 
   {
     title: 'Task Manager',
     description: 'Task Manager is a practical application designed to help users efficiently manage their daily tasks through an intuitive interface. This project demonstrates my ability to build a structured task tracking system where users can create, view, and organize tasks in a logical and accessible way. It showcases clean component structure, state management, and user interaction handling — all essential skills in front-end development.',
     tech: ['HTML', 'CSS', 'JavaScript', 'React.JS', 'Node.js', 'Express', 'MongoDB'],
     link:'https://github.com/MsTanviAgrawal/Task_Manager.git'
   },
+  //  {
+  //   title: 'Mini Projects',
+  //   description: 'This project is a collection of daily mini-apps built to practice and improve my frontend development skills. It showcases my ability to build React UI components, implement dynamic JavaScript logic, and create clean, reusable code patterns for real-world interaction. Each mini-project demonstrates responsive UI design, component structuring, and practical problem-solving using modern web technologies.',
+  //   tech: ['HTML', 'CSS', 'JavaScript', 'React.JS'],
+  //   link:'https://github.com/MsTanviAgrawal/Mini_Projects.git'
+  // },
   
 ]
 

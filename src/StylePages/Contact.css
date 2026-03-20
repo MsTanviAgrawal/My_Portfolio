@@ -4,7 +4,7 @@
 #contact {
   justify-content: center;
   text-align: center;
-  padding: clamp(40px, 4vh, 60px) 15px; /* Reduced vertical padding */
+  padding: clamp(40px, 8vh, 60px) 15px; /* Reduced vertical padding */
   position: relative;
   z-index: 1;
   overflow-x: hidden; 

@@ -3,7 +3,7 @@
 ===================== */
 #education {
   text-align: center;
-  padding: clamp(40px, 4vh, 60px) 15px; 
+  padding: clamp(40px, 8vh, 60px) 15px; 
   position: relative;
   z-index: 1;
   overflow-x: hidden;

@@ -4,7 +4,7 @@
 #projects {
   justify-content: center;
   text-align: center;
-  padding: clamp(40px, 4vh, 60px) 15px; /* Reduced vertical padding */
+  padding: clamp(40px, 8vh, 60px) 15px; /* Reduced vertical padding */
   position: relative;
   z-index: 1;
   overflow-x: hidden; 
@@ -61,7 +61,7 @@
   max-width: 310px; /* Reduced from 360px */
   
   /* Reduced height */
-  min-height: 330px; 
+  min-height: 320px; 
   
   padding: clamp(1rem, 2vw, 1.2rem); /* Tighter padding */
   display: flex;
@@ -92,7 +92,7 @@
   text-align: center;
   font-size: clamp(0.9rem, 2vw, 1.05rem); /* Reduced size */
   color: #f5f3ff;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -103,7 +103,7 @@
   color: #e5e7eb;
   line-height: 1.5;
   text-align: justify;
-  margin-bottom: 12px;
+  /* margin-bottom: 30px; */
   flex-grow: 1; 
 }
 
@@ -114,7 +114,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .project-skills span {
