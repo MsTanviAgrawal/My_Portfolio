@@ -11,39 +11,27 @@ const About = () => {
         <p className='intro'>
           Hello! I'm
           <span className='full-name'> Tanvi Agrawal </span>
-          a passionate and detail-oriented
+          a passionate and results-driven
           <span> Mern Stack Developer </span>
-          with a strong foundation in 
-          HTML, CSS, JavaScript, React.js
-          and core programming principles like 
-          OOPs and SOLID Principles.
+          with hands-on experience in building scalable, high-performance web and mobile applications using modern technologies like React.js, React Native, TypeScript, and Tailwind CSS.
         </p>
         <p className='intro'>
-           I’ve recently completed my Bachelor of Technology in 
-           Electrical and Electronics Engineering 
-           from UIT RGPV, Shivpuri
-           with a CGPA of 7.85, and I’m now focused on building modern, user-friendly web applications.
+           Currently working as a Frontend Developer Intern at Codesutra AI, I have contributed to developing production-ready applications and real-world client projects, focusing on creating intuitive, responsive, and user-centric interfaces.
         </p>
         <p className='intro'>
-          Through intensive training programs with ITEXPERTS and Coplur Technologies, I’ve gained hands-on experience in Java development and mern stack technologies.
-          These sessions sharpened my practical skills and helped me understand real-world software development practices, from writing clean, efficient code to using tools like 
-          Git, VS Code, and Netlify.
+          From developing a feature-rich AI-powered pet care super app to building a complete freelancing platform with authentication, bookings, and dynamic user interactions, I enjoy transforming complex ideas into seamless digital experiences.
         </p>
         <p className='intro'>
-          My project work includes building a 
-          Freelancing Website 
-          to connect clients and freelancers through a feature-rich platform, and developing a 
-          Stack Overflow-Inspired Web Application
-          using Mern Stack technologies.
+         With a strong foundation in UI development, problem-solving, and collaboration, I am committed to continuous learning and delivering impactful solutions that combine functionality, performance, and design excellence.
         </p>
-        <p className='intro'>
+        {/* <p className='intro'>
           Outside of tech, I’m a creative thinker with a love for art, painting, and sports, having earned accolades in badminton and district-level art competitions.
           I also take pride in my leadership and organizational abilities, demonstrated by coordinating college events and volunteering in NSS community programs.
         </p>
         <p className='intro'>
           I’m a quick learner, a team player, and someone who thrives in environments that encourage continuous growth. 
           I'm currently seeking opportunities where I can contribute, learn, and evolve as a developer in the ever-changing tech landscape.
-        </p>
+        </p> */}
 
       </div>
     </section>
