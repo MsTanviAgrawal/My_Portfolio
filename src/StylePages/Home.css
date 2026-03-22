@@ -170,17 +170,16 @@
   }
 
   .buttons a {
-    /* padding: 20px ; */
-    font-size:  1.5rem;
+    /* padding: 10px ; */
+    font-size:  1.4rem;
     align-items: center;
     justify-content: center;
   }
   .buttons .download-resume {
-    /* padding: 15px; */
-    font-size: 1.43rem;
+    padding: 15px;
+    font-size: 1rem;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
   }
 }
 
