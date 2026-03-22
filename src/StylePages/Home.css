@@ -26,14 +26,21 @@
 /* =====================
    LEFT SECTION (Text)
 ===================== */
-.leftSection { 
-    /* Scales between 1.5rem and 3.5rem */
+
+/* .leftSection { 
     font-size: clamp(1.5rem, 4vw, 3.5rem);
     margin-top: 0;
+} */
+
+.leftSection { 
+    font-size: clamp(1.5rem, 4vw, 3.5rem);
+    margin-top: 0;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideInLeft 1s ease-out forwards;
 }
 
 .greeting {
-    /* Scales between 2.2rem and 4.5rem */
     font-size: clamp(2.2rem, 6vw, 4.5rem); 
     color: #bb51ef;
     font-weight: bold;
@@ -97,8 +104,8 @@
     align-items: center;
 }
 
-.rightSection img {
-    /* Fluid image sizing: min 220px, max 450px */
+/* .rightSection img {
+    
     width: clamp(220px, 35vw, 450px);
     height: clamp(220px, 35vw, 450px);
     border-radius: 50%;
@@ -112,6 +119,21 @@
     box-shadow: 0 15px 35px rgba(255, 255, 255, 0.25);
     transform: scale(1.03);
     filter: brightness(1.05);
+} */
+
+
+.rightSection img {
+    width: clamp(220px, 35vw, 450px);
+    height: clamp(220px, 35vw, 450px);
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideInRight 1s ease-out forwards,
+               floatUpDown 2s ease-in-out 1s infinite;
+
+    transition: all 0.4s ease;
 }
 
 /* =====================
@@ -156,4 +178,41 @@
 /* Utilitarian Fixes */
 .typed-cursor {
     display: none !important;
+}
+
+/* Slide from left */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide from right */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 🌊 Floating animation */
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
