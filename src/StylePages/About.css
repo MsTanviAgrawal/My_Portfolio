@@ -94,6 +94,10 @@
 
 /* Small Mobile Refinements */
 @media screen and (max-width: 480px) {
+  #about{
+    padding: clamp(40px, 4vh, 60px) 15px;
+  }
+
   .about-section {
     width: 90%;
     padding: 1rem;

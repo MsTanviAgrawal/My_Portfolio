@@ -136,7 +136,7 @@
 
 @media screen and (max-width: 480px) {
   #skills {
-    padding: 30px 10px;
+    padding: clamp(40px, 4vh, 60px) 15px;
   }
 
   .skills-heading h1 {
