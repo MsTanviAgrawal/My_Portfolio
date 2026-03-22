@@ -2,23 +2,22 @@
    HERO SECTION (.first)
 ===================== */
 .first {
-    /* width: 100%; */
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin-top: clamp(80px, 25vh, 150px);
-    margin-bottom: clamp(40px, 10vh, 100px);
-    padding: 0 5%;
-    gap: 2rem;
-    
-    transition: all 0.3s ease;
-    will-change: transform;
-    perspective: 1000px;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: clamp(80px, 25vh, 150px);
+  margin-bottom: clamp(40px, 10vh, 100px);
+  padding: 0 5%;
+  gap: 2rem;
+  transition: all 0.3s ease;
+  will-change: transform;
+  perspective: 1000px;
 }
 
 .first > div {
-    width: 45%;
-    margin: 0; 
+  width: 45%;
+  margin: 0;
 }
 
 /* =====================
@@ -30,75 +29,74 @@
     margin-top: 0;
 } */
 
-.leftSection { 
-    font-size: clamp(1.5rem, 4vw, 3.5rem);
-    margin-top: 0;
-    opacity: 0;
-    transform: translateX(-100px);
-    animation: slideInLeft 1s ease-out forwards;
+.leftSection {
+  font-size: clamp(1.5rem, 4vw, 3.5rem);
+  margin-top: 0;
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideInLeft 1s ease-out forwards;
 }
 
 .greeting {
-    font-size: clamp(2.2rem, 6vw, 4.5rem); 
-    color: #bb51ef;
-    font-weight: bold;
-    text-shadow: 0 2px 10px rgba(63, 5, 92, 0.2);
-    line-height: 1.1;
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  color: #bb51ef;
+  font-weight: bold;
+  text-shadow: 0 2px 10px rgba(63, 5, 92, 0.2);
+  line-height: 1.1;
 }
 
 .name {
-    font-family: 'Copperplate Gothic Light', serif;
+  font-family: "Copperplate Gothic Light", serif;
 }
 
 .developer {
-    display: inline-block;
-    color: #f181ee;
-    white-space: nowrap;
-    width: 100%;
-    margin-top: 10px;
-    font-size: 0.65em; 
+  display: inline-block;
+  color: #f181ee;
+  white-space: nowrap;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 0.65em;
 }
 
 .leftSection .buttons {
-    padding: 1.5rem 0;
-    margin-top: 10px; 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+  padding: 1.5rem 0;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.buttons a{
-    display: inline-block;
-    padding: clamp(12px, 1.6vw, 2px) clamp(20px, 3vw, 20px);
-    border: 2px solid white;
-    border-radius: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: clamp(0.85rem, 2vw, 1.4rem);
-    font-weight: 500;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    transform: translateZ(0);
+.buttons a {
+  display: inline-block;
+  padding: clamp(12px, 1.6vw, 2px) clamp(20px, 3vw, 20px);
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: clamp(0.85rem, 2vw, 1.4rem);
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: translateZ(0);
 }
 
 .buttons .download-resume {
-    
-    background: linear-gradient(90deg, #8245ec, #a855f7);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, #8245ec, #a855f7);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .buttons a:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* =====================
    RIGHT SECTION (Image)
 ===================== */
 .rightSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* .rightSection img {
@@ -118,19 +116,19 @@
     filter: brightness(1.05);
 } */
 
-
 .rightSection img {
-    width: clamp(220px, 35vw, 450px);
-    height: clamp(220px, 35vw, 450px);
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
-    opacity: 0;
-    transform: translateX(100px);
-    animation: slideInRight 1s ease-out forwards,
-               floatUpDown 2s ease-in-out 1s infinite;
+  width: clamp(220px, 35vw, 450px);
+  height: clamp(220px, 35vw, 450px);
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transform: translateX(100px);
+  animation:
+    slideInRight 1s ease-out forwards,
+    floatUpDown 2s ease-in-out 1s infinite;
 
-    transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 /* =====================
@@ -139,76 +137,90 @@
 
 /* Tablet (Laptops/Tablets) */
 @media screen and (max-width: 1024px) {
-    .first {
-        flex-direction: column-reverse; /* Image on top for mobile */
-        text-align: center;
-        margin-top: 100px;
-        gap: 1rem;
-    }
+  .first {
+    flex-direction: column-reverse; 
+    text-align: center;
+    margin-top: 100px;
+    gap: 1rem;
+  }
 
-    .first > div {
-        width: 90%;
-    }
+  .first > div {
+    width: 90%;
+  }
 
-    .leftSection .buttons {
-        justify-content: center;
-    }
+  .leftSection .buttons {
+    justify-content: center;
+  }
 }
 
 /* Mobile Devices */
 @media screen and (max-width: 480px) {
-    .first {
-        margin-top: 80px;
-        padding: 0 5px;
-    }
+  .first {
+    margin-top: 80px;
+    padding: 0 5px;
+  }
 
-    .rightSection img {
-        width: 200px; /* Force smaller size on tiny screens */
-        height: 200px;
-    }
+  .rightSection img {
+    width: 200px;
+    height: 200px;
+  }
 
-    .greeting {
-        text-shadow: 0 2px 6px rgba(63, 5, 92, 0.2);
-    }
+  .greeting {
+    text-shadow: 0 2px 6px rgba(63, 5, 92, 0.2);
+  }
+
+  .buttons a {
+    /* padding: 20px ; */
+    font-size:  1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttons .download-resume {
+    /* padding: 15px; */
+    font-size: 1.43rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
 }
 
 .typed-cursor {
-    display: none !important;
+  display: none !important;
 }
 
 /* Slide from left */
 @keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Slide from right */
 @keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* 🌊 Floating animation */
 @keyframes floatUpDown {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
