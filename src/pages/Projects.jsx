@@ -21,6 +21,13 @@ const projects = [
     tech: [ 'React Native', 'TypeScript', 'JavaScript', 'Redux'  ],
     link:'#'
   },
+   {
+    title: 'Task Manager',
+    description: 'Task Manager is a practical application designed to help users efficiently manage their daily tasks through an intuitive interface. This project demonstrates my ability to build a structured task tracking system where users can create, view, and organize tasks in a logical and accessible way. It showcases clean component structure, state management, and user interaction handling — all essential skills in front-end development.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'React.JS', 'Node.js', 'Express', 'MongoDB'],
+    // link:'https://github.com/MsTanviAgrawal/Task_Manager.git'
+    link:'https://task-manager-gwqg17ytj-tanvi-agrawals-projects.vercel.app/'
+  },
   {
     title: ' Appoint-A Freelancing Website ',
     description: ' I developed a freelancing platform called Appoint using the MERN stack, featuring role-based authentication for both service providers and clients. The platform includes real-time encrypted chat and calling, ensuring secure and seamless communication between users. Additionally, I designed and deployed a fully responsive UI/UX, providing an intuitive experience that enables smooth service hiring, collaboration, and deal management. ',
@@ -28,12 +35,6 @@ const projects = [
     link: '#'
   },
  
-  {
-    title: 'Task Manager',
-    description: 'Task Manager is a practical application designed to help users efficiently manage their daily tasks through an intuitive interface. This project demonstrates my ability to build a structured task tracking system where users can create, view, and organize tasks in a logical and accessible way. It showcases clean component structure, state management, and user interaction handling — all essential skills in front-end development.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'React.JS', 'Node.js', 'Express', 'MongoDB'],
-    link:'https://github.com/MsTanviAgrawal/Task_Manager.git'
-  },
   //  {
   //   title: 'Mini Projects',
   //   description: 'This project is a collection of daily mini-apps built to practice and improve my frontend development skills. It showcases my ability to build React UI components, implement dynamic JavaScript logic, and create clean, reusable code patterns for real-world interaction. Each mini-project demonstrates responsive UI design, component structuring, and practical problem-solving using modern web technologies.',
