@@ -4,9 +4,8 @@
 .first {
     /* width: 100%; */
     display: flex;
-    justify-content: center; /* Better centering */
+    justify-content: center; 
     align-items: center;
-    /* Fluid vertical spacing */
     margin-top: clamp(80px, 25vh, 150px);
     margin-bottom: clamp(40px, 10vh, 100px);
     padding: 0 5%;
@@ -17,10 +16,9 @@
     perspective: 1000px;
 }
 
-/* Individual Content Divs */
 .first > div {
     width: 45%;
-    margin: 0; /* Removed fixed 100px margin */
+    margin: 0; 
 }
 
 /* =====================
@@ -58,10 +56,9 @@
     white-space: nowrap;
     width: 100%;
     margin-top: 10px;
-    font-size: 0.5em; /* Scaled relative to parent font-size */
+    font-size: 0.65em; 
 }
 
-/* Buttons Container */
 .leftSection .buttons {
     padding: 1.5rem 0;
     margin-top: 10px; 
@@ -175,7 +172,6 @@
     }
 }
 
-/* Utilitarian Fixes */
 .typed-cursor {
     display: none !important;
 }

@@ -68,7 +68,6 @@ const Navbar = ({ onScroll }) => {
 
   return (
     <nav className="navbar">
-      {/* Brand */}
       <div className="navbar-brand">Tanvi's Portfolio</div>
 
       {/* Hamburger (Mobile Only) */}
