@@ -50,7 +50,6 @@
 
 // export default Navbar;
 
-
 import { useState } from "react";
 import "./Navbar.css";
 
@@ -70,15 +69,17 @@ const Navbar = ({ onScroll }) => {
     <nav className="navbar">
       <div className="navbar-brand">Tanvi's Portfolio</div>
 
-      {/* Hamburger (Mobile Only) */}
-      <div className="hamburger" onClick={handleMenuToggle}>
-        ☰
+      {/* Animated Hamburger (Mobile Only) */}
+      <div className={`hamburger ${isMenuOpen ? "open" : ""}`} onClick={handleMenuToggle}>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
 
-      {/* Overlay */}
+      {/* Overlay Mask */}
       {isMenuOpen && <div className="overlay" onClick={handleMenuToggle}></div>}
 
-      {/* Sidebar (Mobile Menu) */}
+      {/* Sidebar (Mobile Menu - Slides from the left side) */}
       <div className={`sidebar ${isMenuOpen ? "open" : ""}`}>
         <ul className="navbar-links mobile">
           <li><button onClick={() => handleNavClick("home")}>Home</button></li>
@@ -90,7 +91,7 @@ const Navbar = ({ onScroll }) => {
         </ul>
       </div>
 
-      {/* Desktop Menu */}
+      {/* Desktop Menu Menu Selection */}
       <ul className="navbar-links desktop">
         <li><button onClick={() => onScroll("home")}>Home</button></li>
         <li><button onClick={() => onScroll("about")}>About</button></li>

@@ -15,6 +15,10 @@ import githubLogo from '../assets/tech_logo/github.png';
 import vscodeLogo from '../assets/tech_logo/vscode.png';
 import netlifyLogo from '../assets/tech_logo/netlify.png';
 import postmanLogo from '../assets/tech_logo/postman.png';
+import typescriptLogo from '../assets/tech_logo/typescript.png';
+import vercelLogo from '../assets/tech_logo/vercel.png';
+// import renderLogo from '../assets/tech_logo/render.png';
+import nextjsLogo from '../assets/tech_logo/nextjs.png';
 
 const Skills = () => {
 
@@ -28,6 +32,7 @@ const Skills = () => {
         { name: 'React JS', logo: reactjsLogo },
         { name: 'Tailwind CSS', logo: tailwindcssLogo },
         { name: 'Bootstrap', logo: bootstrapLogo },
+        { name: 'Next.js', logo: nextjsLogo },
       ],
     },
     {
@@ -41,8 +46,9 @@ const Skills = () => {
     {
       title: 'Languages',
       skills: [
-        { name: 'Java', logo: javaLogo },
         { name: 'JavaScript', logo: javascriptLogo },
+        { name: 'TypeScript', logo: typescriptLogo },
+        { name: 'Java', logo: javaLogo },
       ],
     },
     {
@@ -52,6 +58,8 @@ const Skills = () => {
         { name: 'GitHub', logo: githubLogo },
         { name: 'VS Code', logo: vscodeLogo },
         { name: 'Netlify', logo: netlifyLogo },
+        { name: 'Vercel', logo: vercelLogo },
+        // { name: 'Render', logo: renderLogo },
         { name: 'Postman', logo: postmanLogo },
 
       ],
