@@ -26,7 +26,7 @@ const projects = [
     description: 'Task Manager is a practical application designed to help users efficiently manage their daily tasks through an intuitive interface. This project demonstrates my ability to build a structured task tracking system where users can create, view, and organize tasks in a logical and accessible way. It showcases clean component structure, state management, and user interaction handling — all essential skills in front-end development.',
     tech: ['HTML', 'CSS', 'JavaScript', 'React.JS', 'Node.js', 'Express', 'MongoDB'],
     // link:'https://github.com/MsTanviAgrawal/Task_Manager.git'
-    link:'https://task-manager-p4bget0ns-tanvi-agrawals-projects.vercel.app/'
+    link:'https://task-manager-omega-one-69.vercel.app/'
   },
   {
     title: ' Appoint-A Freelancing Website ',
