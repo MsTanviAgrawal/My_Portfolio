@@ -70,6 +70,7 @@ const Skills = () => {
       <section id="skills" >
 
         <div className="skills-heading">
+          {/* <p className="skills-tag">Skills</p> */}
           <h1 >SKILLS</h1>
           <p >
             A collection of my technical skills and expertise honed through various projects and experiences

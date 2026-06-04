@@ -126,14 +126,13 @@
   border: 1px solid rgba(168, 85, 247, 0.3);
 }
 
-/* =====================
-   VIEW PROJECT BUTTON (Pinned to Bottom)
-===================== */
 .view-project {
   display: block;
   margin-top: 5%; 
-  padding: 8px 0; /* Thinner button */
-  font-size: 0.8rem; /* Smaller font */
+  margin-left: 6px;
+  margin-right: 6px;
+  padding: 8px 0 ; 
+  font-size: 0.8rem; 
   font-weight: 600;
   text-align: center;
   text-decoration: none;

@@ -2,15 +2,15 @@
    EXPERIENCE SECTION (Theme Matched)
 ===================== */
 #experience-page {
-  text-align: center;
-  padding: clamp(40px, 8vh, 60px) 15px;
+   text-align: center;
+  padding: clamp(40px, 8vh, 60px) 15px; 
   position: relative;
   z-index: 1;
   overflow-x: hidden;
 }
 
-.experience-section::before,
-.experience-section::after {
+#experience-page::before,
+#experience-page::after {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -19,7 +19,7 @@
   pointer-events: none;
 }
 
-.experience-section::before {
+#experience-page::before {
   width: 250px;
   height: 250px;
   background: #a855f7;
@@ -27,7 +27,7 @@
   right: -50px;
 }
 
-.experience-section::after {
+#experience-page::after {
   width: 300px;
   height: 300px;
   background: #ec4899;
@@ -37,10 +37,8 @@
 
 .experience-heading {
   margin-top: 3.5rem;
-  font-size: clamp(1.4rem, 5vw, 2.2rem);
-  color: #f5f3ff;
   position: relative;
-  line-height: 1.2;
+  z-index: 1;
 }
 
 .experience-tag {
@@ -53,7 +51,7 @@
 }
 
 .experience-heading h1 {
-  margin-top: 0;
+   margin-top: 0;
   font-size: clamp(1.4rem, 5vw, 2.2rem);
   color: #f5f3ff;
   position: relative;
@@ -79,70 +77,83 @@
 }
 
 /* =====================
-   HORIZONTAL DESCENDING LADDER
+   HORIZONTAL DESCENDING LADDER (RIGHT-ALIGNED STEP SYSTEM)
 ===================== */
 .experience-ladder {
   position: relative;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 28px;
   z-index: 1;
 }
 
-/* Horizontal ladder blocks */
+/* Base style for horizontal blocks */
 .experience-card {
   position: relative;
-  width: 85%; 
   background: linear-gradient(
     180deg,
     rgba(40, 15, 80, 0.88),
     rgba(15, 5, 35, 0.95)
   );
-  border: 1px solid rgba(168, 85, 247, 0.3);
+  /* border: 1px solid rgba(168, 85, 247, 0.3); */
   border-radius: 14px;
-  padding: 20px 24px;
+  padding: 22px 26px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  animation: slideInRight 0.8s cubic-bezier(0.25, 1, 0.5, 1) both;
-  animation-delay: calc(var(--card-index) * 0.2s);
+  align-self: flex-end; 
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.experience-card:nth-child(1) {
+     border: 1px solid rgba(234, 75, 165, 0.3);
+}
+.experience-card:nth-child(2) {
+     border: 1px solid rgba(168, 85, 247, 0.3);
+}
+.experience-card:nth-child(3) {
+     border: 1px solid rgba(61, 150, 234, 0.3);
 }
 
 .experience-card:nth-child(1) {
-  align-self: flex-end; 
-  border-right: 4px solid #f050a0;
+  width: 60%; 
+  border-left: 4px solid #f050a0;
+  animation: ladderSlide1 0.8s cubic-bezier(0.25, 1, 0.5, 1) both;
 }
 
 .experience-card:nth-child(2) {
-  align-self: center; 
-  border-right: 4px solid #a855f7;
+  width: 80%; 
+  border-left: 4px solid #a855f7;
+  animation: ladderSlide2 0.9s cubic-bezier(0.25, 1, 0.5, 1) both;
+  animation-delay: 0.15s;
 }
 
 .experience-card:nth-child(3) {
-  align-self: flex-start;
-  border-right: 4px solid #3695ed;
+  width: 100%; 
+  border-left: 4px solid #3695ed;
+  animation: ladderSlide3 1s cubic-bezier(0.25, 1, 0.5, 1) both;
+  animation-delay: 0.3s;
 }
 
-/* Hover States matching Project cards */
 .experience-card:nth-child(1):hover {
-  transform: translateY(-4px);
-  border-color: #af1c66;
-  box-shadow: 0 15px 40px rgba(177, 24, 95, 0.2);
+  transform: translateY(-4px) scale(1.005);
+  border-color: #f050a0;
+  box-shadow: 0 15px 40px rgba(240, 80, 160, 0.2);
 }
 
 .experience-card:nth-child(2):hover {
-  transform: translateY(-4px);
-  border-color: #7d2bc9;
-  box-shadow: 0 15px 40px rgba(92, 18, 152, 0.2);
+  transform: translateY(-4px) scale(1.005);
+  border-color: #a855f7;
+  box-shadow: 0 15px 40px rgba(168, 85, 247, 0.2);
 }
 
 .experience-card:nth-child(3):hover {
-  transform: translateY(-4px);
-  border-color: #1a68b1;
-  box-shadow: 0 15px 40px rgba(19, 91, 158, 0.2);
+  transform: translateY(-4px) scale(1.005);
+  border-color: #3695ed;
+  box-shadow: 0 15px 40px rgba(54, 149, 237, 0.1);
 }
+
 /* =====================
    CARD CONTENT STYLING
 ===================== */
@@ -161,6 +172,7 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 0;
+  text-align: left;
 }
 
 .experience-badge {
@@ -178,6 +190,7 @@
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 12px;
+  text-align: left;
 }
 
 .experience-points {
@@ -195,46 +208,89 @@
 }
 
 /* =====================
-   ANIMATIONS
+   DYNAMIC LADDER ANIMATIONS
 ===================== */
-@keyframes slideInRight {
+@keyframes ladderSlide1 {
   from {
     opacity: 0;
-    transform: translateX(50px) translateY(10px);
+    transform: translateX(100%) scaleX(0.8);
   }
   to {
     opacity: 1;
-    transform: translateX(0) translateY(0);
+    transform: translateX(0) scaleX(1);
+  }
+}
+
+@keyframes ladderSlide2 {
+  from {
+    opacity: 0;
+    transform: translateX(100%) scaleX(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scaleX(1);
+  }
+}
+
+@keyframes ladderSlide3 {
+  from {
+    opacity: 0;
+    transform: translateX(100%) scaleX(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scaleX(1);
   }
 }
 
 /* =====================
    RESPONSIVE OVERRIDES
 ===================== */
+
+/* Tablet Optimization (Screen widths under 920px) */
 @media screen and (max-width: 920px) {
-  .experience-card {
-    width: 95%;
-    align-self: center !important; /* Stack cleanly on medium devices */
-  }
+  .experience-card:nth-child(1) { width: 75%; }
+  .experience-card:nth-child(2) { width: 90%; }
+  .experience-card:nth-child(3) { width: 100%; }
 }
 
-@media screen and (max-width: 480px) {
-  .experience-section {
-    padding: clamp(40px, 4vh, 60px) 15px;
+/* Mobile & Small Device Optimization (Screen widths under 600px) */
+@media screen and (max-width: 600px) {
+  #experience-page {
+    padding: clamp(30px, 6vh, 50px) 10px;
   }
 
+  .experience-ladder {
+    gap: 20px;
+  }
+
+  .experience-card:nth-child(1) { width: auto }
+  .experience-card:nth-child(2) { width: auto }
+  .experience-card:nth-child(3) { width: auto }
+
   .experience-card {
-    width: 100%;
-    padding: 16px;
+    padding: 16px 18px;
+    width: auto;
+    margin: 0 1rem;
+   
   }
 
   .card-header {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
     gap: 6px;
   }
 
+  .experience-badge {
+    font-size: 0.68rem;
+    padding: 2px 8px;
+  }
+
   .experience-points {
     padding-left: 12px;
+  }
+  
+  .experience-points li {
+    text-align: left;
   }
 }

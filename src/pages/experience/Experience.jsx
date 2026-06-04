@@ -33,8 +33,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience-page" 
-  >
+    <section id="experience-page">
       <div className="experience-heading">
         {/* <p className="experience-tag">Training & Experience</p> */}
         <h1>TRAINING & EXPERIENCE</h1>
