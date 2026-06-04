@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
-import '../StylePages/Contact.css'
+import './Contact.css'
 
 const Contact = () => {
   const [sent, setSent] = useState({

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../StylePages/Projects.css'
+import './Projects.css'
 
 const projects = [
   // {

@@ -1,24 +1,24 @@
 import React from 'react'
-import '../StylePages/Skills.css'
-import htmlLogo from '../assets/tech_logo/html.png';
-import cssLogo from '../assets/tech_logo/css.png';
-import javascriptLogo from '../assets/tech_logo/javascript.png';
-import reactjsLogo from '../assets/tech_logo/reactjs.png';
-import tailwindcssLogo from '../assets/tech_logo/tailwindcss.png';
-import bootstrapLogo from '../assets/tech_logo/bootstrap.png';
-import nodejsLogo from '../assets/tech_logo/nodejs.png';
-import expressjsLogo from '../assets/tech_logo/express.png';
-import mongodbLogo from '../assets/tech_logo/mongodb.png';
-import javaLogo from '../assets/tech_logo/java.png';
-import gitLogo from '../assets/tech_logo/git.png';
-import githubLogo from '../assets/tech_logo/github.png';
-import vscodeLogo from '../assets/tech_logo/vscode.png';
-import netlifyLogo from '../assets/tech_logo/netlify.png';
-import postmanLogo from '../assets/tech_logo/postman.png';
-import typescriptLogo from '../assets/tech_logo/typescript.png';
-import vercelLogo from '../assets/tech_logo/vercel.png';
+import './Skills.css'
+import htmlLogo from '../../assets/tech_logo/html.png';
+import cssLogo from '../../assets/tech_logo/css.png';
+import javascriptLogo from '../../assets/tech_logo/javascript.png';
+import reactjsLogo from '../../assets/tech_logo/reactjs.png';
+import tailwindcssLogo from '../../assets/tech_logo/tailwindcss.png';
+import bootstrapLogo from '../../assets/tech_logo/bootstrap.png';
+import nodejsLogo from '../../assets/tech_logo/nodejs.png';
+import expressjsLogo from '../../assets/tech_logo/express.png';
+import mongodbLogo from '../../assets/tech_logo/mongodb.png';
+import javaLogo from '../../assets/tech_logo/java.png';
+import gitLogo from '../../assets/tech_logo/git.png';
+import githubLogo from '../../assets/tech_logo/github.png';
+import vscodeLogo from '../../assets/tech_logo/vscode.png';
+import netlifyLogo from '../../assets/tech_logo/netlify.png';
+import postmanLogo from '../../assets/tech_logo/postman.png';
+import typescriptLogo from '../../assets/tech_logo/typescript.png';
+import vercelLogo from '../../assets/tech_logo/vercel.png';
 // import renderLogo from '../assets/tech_logo/render.png';
-import nextjsLogo from '../assets/tech_logo/nextjs.png';
+import nextjsLogo from '../../assets/tech_logo/nextjs.png';
 
 const Skills = () => {
 

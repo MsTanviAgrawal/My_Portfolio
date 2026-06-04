@@ -1,16 +1,18 @@
 import React, { useRef } from 'react';
 import Navbar from './Navbar';
 import './DashboardLayout.css'; 
-import Home from '../pages/Home';
-import About from '../pages/About';
-import Skills from '../pages/Skills';
-import Projects from '../pages/Projects';
-import Education from '../pages/Education';
-import Contact from '../pages/Contact';
+import Home from '../pages/home/Home';
+import Experience from '../pages/experience/Experience';
+import About from '../pages/about/About';
+import Skills from '../pages/skills/Skills';
+import Projects from '../pages/project/Projects';
+import Education from '../pages/education/Education';
+import Contact from '../pages/contact/Contact';
 import Footer from './Footer';
 
 const DashboardLayout = () => {
   const homeRef = useRef(null);
+  const experienceRef = useRef(null);
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
@@ -21,6 +23,7 @@ const DashboardLayout = () => {
 
   const smoothScroll = (section) => {
     if (section === 'home') homeRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (section === 'experience') experienceRef.current?.scrollIntoView({ behavior: 'smooth' });
     if (section === 'about') aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
     if (section === 'skills') skillsRef.current?.scrollIntoView({ behavior: 'smooth' });
     if (section === 'projects') projectsRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -36,10 +39,12 @@ const DashboardLayout = () => {
       <main className="layout-main">
       
         <div ref={homeRef} id="home" ><Home /></div>
-        <div ref={aboutRef} id= "about"><About /></div>
+        <div ref={experienceRef} id="experience"><Experience /></div>
+        
         <div ref={skillsRef} id="skills"><Skills /></div>
         <div ref={projectsRef} id="projects"><Projects /></div>
         <div ref={educationRef} id="education"><Education /></div>
+        <div ref={aboutRef} id= "about"><About /></div>
         <div ref={contactRef} id="contact"><Contact /></div>
         <div ref={footerRef}> <Footer/></div>
       </main>

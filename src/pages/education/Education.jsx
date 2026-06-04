@@ -1,7 +1,7 @@
 import React from 'react'
 // import { education } from '../Constants'
-import rgpvLogo from '../assets/education_logo/rgpv_logo.png';
-import '../StylePages/Education.css'
+import rgpvLogo from '../../assets/education_logo/rgpv_logo.png';
+import './Education.css'
 
 const education = [
   {

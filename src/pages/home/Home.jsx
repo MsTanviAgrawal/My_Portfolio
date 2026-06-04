@@ -1,8 +1,8 @@
 import React from 'react';
 import Typed from 'typed.js';
 // import { useNavigate } from 'react-router-dom';
-import '../StylePages/Home.css';
-import profilePic from '../assets/Photo.jpg'
+import './Home.css';
+import profilePic from '../../assets/Photo.jpg';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {

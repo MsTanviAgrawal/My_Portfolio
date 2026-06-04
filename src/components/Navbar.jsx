@@ -16,7 +16,7 @@
 //   return (
 //     <nav className="navbar">
 //       <div className="navbar-brand">Tanvi's Portfolio</div>
-      
+
 //       <div className="hamburger" onClick={handleMenuToggle}>
 //         ☰
 //       </div>
@@ -69,8 +69,10 @@ const Navbar = ({ onScroll }) => {
     <nav className="navbar">
       <div className="navbar-brand">Tanvi's Portfolio</div>
 
-      {/* Animated Hamburger (Mobile Only) */}
-      <div className={`hamburger ${isMenuOpen ? "open" : ""}`} onClick={handleMenuToggle}>
+      <div
+        className={`hamburger ${isMenuOpen ? "open" : ""}`}
+        onClick={handleMenuToggle}
+      >
         <span></span>
         <span></span>
         <span></span>
@@ -82,23 +84,57 @@ const Navbar = ({ onScroll }) => {
       {/* Sidebar (Mobile Menu - Slides from the left side) */}
       <div className={`sidebar ${isMenuOpen ? "open" : ""}`}>
         <ul className="navbar-links mobile">
-          <li><button onClick={() => handleNavClick("home")}>Home</button></li>
-          <li><button onClick={() => handleNavClick("about")}>About</button></li>
-          <li><button onClick={() => handleNavClick("skills")}>Skills</button></li>
-          <li><button onClick={() => handleNavClick("projects")}>Projects</button></li>
-          <li><button onClick={() => handleNavClick("education")}>Education</button></li>
-          <li><button onClick={() => handleNavClick("contact")}>Contact</button></li>
+          <li>
+            <button onClick={() => handleNavClick("home")}>Home</button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick("experience")}>
+              Experience
+            </button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick("skills")}>Skills</button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick("projects")}>Projects</button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick("education")}>
+              Education
+            </button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick("about")}>About</button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick("contact")}>Contact</button>
+          </li>
         </ul>
       </div>
 
       {/* Desktop Menu Menu Selection */}
       <ul className="navbar-links desktop">
-        <li><button onClick={() => onScroll("home")}>Home</button></li>
-        <li><button onClick={() => onScroll("about")}>About</button></li>
-        <li><button onClick={() => onScroll("skills")}>Skills</button></li>
-        <li><button onClick={() => onScroll("projects")}>Projects</button></li>
-        <li><button onClick={() => onScroll("education")}>Education</button></li>
-        <li><button onClick={() => onScroll("contact")}>Contact</button></li>
+        <li>
+          <button onClick={() => onScroll("home")}>Home</button>
+        </li>
+        <li>
+          <button onClick={() => onScroll("experience")}>Experience</button>
+        </li>
+        <li>
+          <button onClick={() => onScroll("skills")}>Skills</button>
+        </li>
+        <li>
+          <button onClick={() => onScroll("projects")}>Projects</button>
+        </li>
+        <li>
+          <button onClick={() => onScroll("education")}>Education</button>
+        </li>
+        <li>
+          <button onClick={() => onScroll("about")}>About</button>
+        </li>
+        <li>
+          <button onClick={() => onScroll("contact")}>Contact</button>
+        </li>
       </ul>
     </nav>
   );
