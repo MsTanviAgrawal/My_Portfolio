@@ -10,19 +10,39 @@ const Footer = () => {
     }
   };
 
+  const NavItems = [
+    { name: "Home", id: "home" },
+    { name: "Experience", id: "experience" },
+    { name: "Skills", id: "skills" },
+    { name: "Projects", id: "projects" },
+    { name: "Education", id: "education" },
+    { name: "About", id: "about" },
+  ];
+
+  const socialMediaLinks = [
+    {
+      icon: <FaLinkedin />,
+      link: "https://www.linkedin.com/in/tanvi-agrawal-04a325236/",
+    },
+    { icon: <FaGithub />, link: "https://github.com/MsTanviAgrawal" },
+    {
+      icon: <FaFacebook />,
+      link: "https://www.facebook.com/tanvi.agrawal.1000",
+    },
+    // { icon: <FaGmail />, link: " /" },
+    {
+      icon: <FaInstagram />,
+      link: "https://www.instagram.com/_tanvi.agrawal__/",
+    },
+  ];
+
   return (
     <footer>
       <div className="footer-section">
         <h2>Tanvi Agrawal</h2>
 
         <nav className="footer-details">
-          {[
-            { name: "Home", id: "home" },
-            { name: "About", id: "about" },
-            { name: "Skills", id: "skills" },
-            { name: "Projects", id: "projects" },
-            { name: "Education", id: "education" },
-          ].map((item) => (
+          {NavItems.map((item) => (
             <button key={item.id} onClick={() => handleScroll(item.id)}>
               {item.name}
             </button>
@@ -30,24 +50,7 @@ const Footer = () => {
         </nav>
 
         <div className="social-media">
-          {[
-            {
-              icon: <FaLinkedin />,
-              link: "https://www.linkedin.com/in/tanvi-agrawal-04a325236/",
-            },
-            { icon: <FaGithub />, 
-              link: "https://github.com/MsTanviAgrawal" 
-            },
-            {
-              icon: <FaFacebook />,
-              link: "https://www.facebook.com/tanvi.agrawal.1000",
-            },
-            // { icon: <FaGmail />, link: " /" },
-            {
-              icon: <FaInstagram />,
-              link: "https://www.instagram.com/_tanvi.agrawal__/",
-            },
-          ].map((item, index) => (
+          {socialMediaLinks.map((item, index) => (
             <a
               key={index}
               href={item.link}
