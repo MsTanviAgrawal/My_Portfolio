@@ -7,7 +7,7 @@
   position: relative;
   z-index: 1;
   overflow-x: hidden;
-  perspective: 1200px; /* Crucial for the 3D cube box depth effect */
+  perspective: 1200px; 
 }
 
 #experience-page::before,
@@ -206,15 +206,14 @@
 ===================== */
 @media screen and (max-width: 680px) {
   .experience-stack-container {
-    min-height: 370px;
+    min-height: 390px;
   }
   
   .experience-ladder {
-    max-width: 85%;
-    height: 320px;
+    max-width: 90%;
+    height: 350px;
   }
 
-  /* Reduce offsets on mobile devices to prevent overflowing screens */
   .experience-card.pos-1 {
     transform: translate3d(15px, -15px, -40px) scale(0.95);
   }

@@ -16,7 +16,7 @@ const Footer = () => {
     { name: "Skills", id: "skills" },
     { name: "Projects", id: "projects" },
     { name: "Education", id: "education" },
-    { name: "About", id: "about" },
+    // { name: "About", id: "about" },
   ];
 
   const socialMediaLinks = [

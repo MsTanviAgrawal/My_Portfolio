@@ -105,11 +105,10 @@ const experiences = [
 const Experience = () => {
   const [activeIndex, setActiveIndex] = useState(0)
 
-  // Automatically cycles through cards every 4 seconds so the user doesn't get bored
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % experiences.length)
-    }, 4000)
+    }, 2000)
     return () => clearInterval(interval)
   }, [])
 
