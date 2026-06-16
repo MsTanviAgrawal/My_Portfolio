@@ -2,11 +2,12 @@
    EXPERIENCE SECTION (Theme Matched)
 ===================== */
 #experience-page {
-   text-align: center;
+  text-align: center;
   padding: clamp(40px, 8vh, 60px) 15px; 
   position: relative;
   z-index: 1;
   overflow-x: hidden;
+  perspective: 1200px; /* Crucial for the 3D cube box depth effect */
 }
 
 #experience-page::before,
@@ -41,17 +42,8 @@
   z-index: 1;
 }
 
-.experience-tag {
-  text-transform: uppercase;
-  letter-spacing: 0.35em;
-  color: #a855f7;
-  font-size: 0.8rem;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
 .experience-heading h1 {
-   margin-top: 0;
+  margin-top: 0;
   font-size: clamp(1.4rem, 5vw, 2.2rem);
   color: #f5f3ff;
   position: relative;
@@ -71,226 +63,167 @@
 .experience-heading p.experience-intro {
   font-size: clamp(0.75rem, 1.8vw, 0.85rem);
   color: #c7c7d2;
-  margin: 0.8rem auto 1.8rem;
+  margin: 0.8rem auto 1rem;
   max-width: 480px;
   line-height: 1.4;
 }
 
 /* =====================
-   HORIZONTAL DESCENDING LADDER (RIGHT-ALIGNED STEP SYSTEM)
+   3D CASCADING CARD STACK (CENTERED & INTERACTIVE)
 ===================== */
+.experience-stack-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 420px; /* Ensures space for the 3D stack shifts */
+  margin-top: 1rem;
+}
+
 .experience-ladder {
   position: relative;
-  max-width: 1100px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  height: 340px;
+  transform-style: preserve-3d;
+}
+
+.experience-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box;
+  background: linear-gradient(
+    135deg,
+    rgba(45, 20, 90, 0.95),
+    rgba(15, 5, 35, 0.98)
+  );
+  border-radius: 20px;
+  padding: 30px ;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.7s ease, 
+              box-shadow 0.4s ease, 
+              border-color 0.4s ease;
+}
+
+.experience-card:nth-child(1) { border: 1px solid rgba(240, 80, 160, 0.4); }
+.experience-card:nth-child(2) { border: 1px solid rgba(168, 85, 247, 0.4); }
+.experience-card:nth-child(3) { border: 1px solid rgba(54, 149, 237, 0.4); }
+
+
+.experience-card.pos-0 {
+  transform: translate3d(0, 0, 0) scale(1) rotateX(0deg);
+  z-index: 3;
+  opacity: 1;
+}
+
+.experience-card.pos-1 {
+  transform: translate3d(25px, -20px, -50px) scale(0.95) rotateX(1deg);
+  z-index: 2;
+  opacity: 0.85;
+}
+
+.experience-card.pos-2 {
+  transform: translate3d(50px, -40px, -100px) scale(0.90) rotateX(2deg);
   z-index: 1;
+  opacity: 0.65;
 }
-
-/* Base style for horizontal blocks */
-.experience-card {
-  position: relative;
-  background: linear-gradient(
-    180deg,
-    rgba(40, 15, 80, 0.88),
-    rgba(15, 5, 35, 0.95)
-  );
-  /* border: 1px solid rgba(168, 85, 247, 0.3); */
-  border-radius: 14px;
-  padding: 22px 26px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  align-self: flex-end; 
-  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease, box-shadow 0.3s ease;
-}
-.experience-card:nth-child(1) {
-     border: 1px solid rgba(234, 75, 165, 0.3);
-}
-.experience-card:nth-child(2) {
-     border: 1px solid rgba(168, 85, 247, 0.3);
-}
-.experience-card:nth-child(3) {
-     border: 1px solid rgba(61, 150, 234, 0.3);
-}
-
-.experience-card:nth-child(1) {
-  width: 60%; 
-  border-left: 4px solid #f050a0;
-  animation: ladderSlide1 0.8s cubic-bezier(0.25, 1, 0.5, 1) both;
-}
-
-.experience-card:nth-child(2) {
-  width: 80%; 
-  border-left: 4px solid #a855f7;
-  animation: ladderSlide2 0.9s cubic-bezier(0.25, 1, 0.5, 1) both;
-  animation-delay: 0.15s;
-}
-
-.experience-card:nth-child(3) {
-  width: 100%; 
-  border-left: 4px solid #3695ed;
-  animation: ladderSlide3 1s cubic-bezier(0.25, 1, 0.5, 1) both;
-  animation-delay: 0.3s;
-}
-
-.experience-card:nth-child(1):hover {
-  transform: translateY(-4px) scale(1.005);
-  border-color: #f050a0;
-  box-shadow: 0 15px 40px rgba(240, 80, 160, 0.2);
-}
-
-.experience-card:nth-child(2):hover {
-  transform: translateY(-4px) scale(1.005);
-  border-color: #a855f7;
-  box-shadow: 0 15px 40px rgba(168, 85, 247, 0.2);
-}
-
-.experience-card:nth-child(3):hover {
-  transform: translateY(-4px) scale(1.005);
-  border-color: #3695ed;
-  box-shadow: 0 15px 40px rgba(54, 149, 237, 0.1);
-}
+/* 
+.experience-card.pos-0:hover {
+  transform: translate3d(0, -8px, 15px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(168, 85, 247, 0.25);
+} */
 
 /* =====================
-   CARD CONTENT STYLING
+   CARD CONTENT STYLING (Perfectly Centered)
 ===================== */
 .card-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 6px;
+  gap: 12px;
+  margin-bottom: 14px;
+  width: 100%;
 }
 
 .experience-card h3 {
-  font-size: clamp(1rem, 2vw, 1.15rem);
+  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
   color: #f5f3ff;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   margin: 0;
-  text-align: left;
+  font-weight: 700;
 }
 
 .experience-badge {
-  font-size: 0.72rem;
-  padding: 4px 10px;
+  font-size: 0.75rem;
+  padding: 4px 14px;
   border-radius: 999px;
-  background: rgba(30, 20, 60, 0.85);
-  color: #d1d5db;
-  border: 1px solid rgba(168, 85, 247, 0.3);
+  background: rgba(168, 85, 247, 0.2);
+  color: #e9d5ff;
+  border: 1px solid rgba(168, 85, 247, 0.5);
   font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .experience-company {
   color: #f56eb1;
   font-weight: 600;
-  font-size: 1rem;
-  margin-bottom: 12px;
-  text-align: left;
+  font-size: 1.05rem;
+  margin: 0 ;
 }
 
 .experience-points {
-  padding-left: 16px;
+  padding: 0;
+  margin: 0;
   color: #e5e7eb;
   display: grid;
-  gap: 6px;
-  list-style-type: square;
+  gap: 10px;
+  list-style: none; /* Removed squares to cleaner center-align prose text */
+  max-width: 90%;
 }
 
 .experience-points li {
-  font-size: clamp(0.8rem, 1.6vw, 0.88rem);
-  line-height: 1.5;
-  text-align: justify;
+  font-size: clamp(0.82rem, 1.6vw, 0.92rem);
+  line-height: 1.6;
+  text-align: center; /* Beautifully center text descriptions */
+  opacity: 0.9;
 }
 
 /* =====================
-   DYNAMIC LADDER ANIMATIONS
+   RESPONSIVE LAYOUT OVERRIDES
 ===================== */
-@keyframes ladderSlide1 {
-  from {
-    opacity: 0;
-    transform: translateX(100%) scaleX(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0) scaleX(1);
-  }
-}
-
-@keyframes ladderSlide2 {
-  from {
-    opacity: 0;
-    transform: translateX(100%) scaleX(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0) scaleX(1);
-  }
-}
-
-@keyframes ladderSlide3 {
-  from {
-    opacity: 0;
-    transform: translateX(100%) scaleX(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0) scaleX(1);
-  }
-}
-
-/* =====================
-   RESPONSIVE OVERRIDES
-===================== */
-
-/* Tablet Optimization (Screen widths under 920px) */
-@media screen and (max-width: 920px) {
-  .experience-card:nth-child(1) { width: 75%; }
-  .experience-card:nth-child(2) { width: 90%; }
-  .experience-card:nth-child(3) { width: 100%; }
-}
-
-/* Mobile & Small Device Optimization (Screen widths under 600px) */
-@media screen and (max-width: 600px) {
-  #experience-page {
-    padding: clamp(30px, 6vh, 50px) 10px;
-  }
-
-  .experience-ladder {
-    gap: 20px;
-  }
-
-  .experience-card:nth-child(1) { width: auto }
-  .experience-card:nth-child(2) { width: auto }
-  .experience-card:nth-child(3) { width: auto }
-
-  .experience-card {
-    padding: 16px 18px;
-    width: auto;
-    margin: 0 1rem;
-   
-  }
-
-  .card-header {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    gap: 6px;
-  }
-
-  .experience-badge {
-    font-size: 0.68rem;
-    padding: 2px 8px;
-  }
-
-  .experience-points {
-    padding-left: 12px;
+@media screen and (max-width: 680px) {
+  .experience-stack-container {
+    min-height: 370px;
   }
   
-  .experience-points li {
-    text-align: left;
+  .experience-ladder {
+    max-width: 85%;
+    height: 320px;
+  }
+
+  /* Reduce offsets on mobile devices to prevent overflowing screens */
+  .experience-card.pos-1 {
+    transform: translate3d(15px, -15px, -40px) scale(0.95);
+  }
+  
+  .experience-card.pos-2 {
+    transform: translate3d(30px, -30px, -80px) scale(0.90);
+  }
+  
+  .experience-points {
+    max-width: 100%;
   }
 }

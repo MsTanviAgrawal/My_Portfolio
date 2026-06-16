@@ -13,7 +13,7 @@ const Home = () => {
     const typed = new Typed(el.current, {
       strings: ['<i> A Frontend Developer & </i>',
       '<i>A MERN Stack Developer.</i>'],
-      typeSpeed: 50,
+      typeSpeed: 40,
       backSpeed: 30,
       startDelay: 300,
       backDelay: 1500,
