@@ -121,10 +121,10 @@ const Navbar = ({ onScroll }) => {
           <button onClick={() => onScroll("experience")}>Experience</button>
         </li>
         <li>
-          <button onClick={() => onScroll("skills")}>Skills</button>
+          <button onClick={() => onScroll("projects")}>Projects</button>
         </li>
         <li>
-          <button onClick={() => onScroll("projects")}>Projects</button>
+          <button onClick={() => onScroll("skills")}>Skills</button>
         </li>
         <li>
           <button onClick={() => onScroll("education")}>Education</button>

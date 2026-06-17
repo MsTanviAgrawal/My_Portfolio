@@ -1,6 +1,4 @@
-/* =====================
-   EXPERIENCE SECTION (Theme Matched)
-===================== */
+
 #experience-page {
   text-align: center;
   padding: clamp(40px, 8vh, 60px) 15px; 
@@ -68,15 +66,12 @@
   line-height: 1.4;
 }
 
-/* =====================
-   3D CASCADING CARD STACK (CENTERED & INTERACTIVE)
-===================== */
 .experience-stack-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 420px; /* Ensures space for the 3D stack shifts */
+  min-height: 420px;
   margin-top: 1rem;
 }
 
@@ -139,15 +134,7 @@
   z-index: 1;
   opacity: 0.65;
 }
-/* 
-.experience-card.pos-0:hover {
-  transform: translate3d(0, -8px, 15px) scale(1.02);
-  box-shadow: 0 25px 50px rgba(168, 85, 247, 0.25);
-} */
 
-/* =====================
-   CARD CONTENT STYLING (Perfectly Centered)
-===================== */
 .card-header {
   display: flex;
   flex-direction: column;
@@ -190,14 +177,14 @@
   color: #e5e7eb;
   display: grid;
   gap: 10px;
-  list-style: none; /* Removed squares to cleaner center-align prose text */
+  list-style: none; 
   max-width: 90%;
 }
 
 .experience-points li {
   font-size: clamp(0.82rem, 1.6vw, 0.92rem);
   line-height: 1.6;
-  text-align: center; /* Beautifully center text descriptions */
+  text-align: center; 
   opacity: 0.9;
 }
 

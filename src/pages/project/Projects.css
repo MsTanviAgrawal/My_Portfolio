@@ -1,6 +1,4 @@
-/* =====================
-   PROJECTS SECTION
-===================== */
+
 #projects {
   justify-content: center;
   text-align: center;
@@ -8,11 +6,9 @@
   position: relative;
   z-index: 1;
   overflow-x: hidden;
+  perspective: 1000px; 
 }
 
-/* =====================
-   HEADING
-===================== */
 .project-heading h1 {
   margin-top: 0;
   font-size: clamp(1.4rem, 5vw, 2.2rem);
@@ -34,47 +30,42 @@
 .project-heading p {
   font-size: clamp(0.75rem, 1.8vw, 0.85rem);
   color: #c7c7d2;
-  margin: 0.8rem auto 2.5rem;
+  margin: 0.8rem auto 0;
   max-width: 480px;
   line-height: 1.4;
   padding: 0 15px;
 }
 
-.project-carousel-container {
-  overflow: hidden;
+.project-stage-container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  padding: 8px 0;
+  padding: 20px 0;
 }
 
-.project-marquee-track {
+.project-carousel-track {
+  position: relative;
+  width: 100%;
+  height: 420px; 
   display: flex;
-  width: max-content;
+  justify-content: center;
+  align-items: center;
 }
 
-.project-slide-group {
-  display: flex;
-  align-items: stretch;
-  gap: 30px;
-  padding-right: 30px;
-  animation: trainScroll 15s linear infinite;
-}
-
-.project-marquee-track:hover .project-slide-group {
-  animation-play-state: paused;
-}
-
-/* =====================
-   COMPACT UNIFORM CARD CONTAINER
-===================== */
 .project-card-wrapper {
-  /* Calculates dynamic width to cleanly display exactly 3 cards on standard desktop */
-  width: calc((1300px - 90px) / 3);
+  position: absolute;
+  width: 100%;
+  max-width: 460px; 
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.85s cubic-bezier(0.25, 1, 0.5, 1), 
+              opacity 0.85s ease, 
+              visibility 0.85s;
+  visibility: hidden;
 }
 
 .project-title {
@@ -82,60 +73,75 @@
   box-sizing: border-box;
   flex: 1;
   min-height: 340px;
-  padding: clamp(1rem, 2vw, 1.4rem); /* Responsive internal padding */
+  padding: clamp(1.2rem, 2.5vw, 1.6rem);
   display: flex;
   flex-direction: column;
   text-align: left;
-  border-radius: 14px;
+  border-radius: 16px;
   background: linear-gradient(
     180deg,
-    rgba(40, 15, 80, 0.88),
-    rgba(15, 5, 35, 0.95)
+    rgba(40, 15, 80, 0.92),
+    rgba(15, 5, 35, 0.98)
   );
   border: 1px solid rgba(168, 85, 247, 0.3);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  transition:
-    transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Card POP zoom on direct card hover */
-.project-card-wrapper:hover .project-title {
-  transform: translateY(-6px);
-  border-color: rgba(168, 85, 247, 0.7);
-  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.15);
+.project-card-wrapper.active-card {
+  transform: translateX(0) scale(1) translateZ(0);
+  opacity: 1;
+  z-index: 3;
+  pointer-events: auto;
+  visibility: visible;
 }
 
-/* PROJECT TITLE */
+.project-card-wrapper.prev-card {
+  transform: translateX(-110%) scale(0.85) rotateY(15deg);
+  opacity: 0.4;
+  z-index: 1;
+  visibility: visible;
+}
+
+.project-card-wrapper.next-card {
+  transform: translateX(110%) scale(0.85) rotateY(-15deg);
+  opacity: 0.4;
+  z-index: 2;
+  visibility: visible;
+}
+
+.project-card-wrapper.hidden-card {
+  transform: translateX(200%) scale(0.7);
+  opacity: 0;
+  z-index: 0;
+}
+
+.project-card-wrapper.active-card:hover .project-title {
+  transform: translateY(-8px);
+  border-color: rgba(236, 72, 153, 0.6);
+  box-shadow: 0 22px 45px rgba(168, 85, 247, 0.25);
+}
+
 .project-title h3 {
   text-align: center;
-  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  font-size: clamp(1rem, 2vw, 1.15rem);
   color: #f5f3ff;
   margin: 0 0 14px 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-/* DESCRIPTION */
 .project-title p {
-  font-size: clamp(
-    0.78rem,
-    1.5vw,
-    0.82rem
-  ); /* Dynamic font sizing for readability */
+  font-size: clamp(0.78rem, 1.5vw, 0.85rem);
   color: #e5e7eb;
-  line-height: 1.5;
+  line-height: 1.55;
   text-align: justify;
   flex-grow: 1;
   margin: 0 0 16px 0;
 }
 
-/* =====================
-   SKILLS TAGS
-===================== */
 .project-skills {
   display: flex;
   flex-wrap: wrap;
@@ -144,26 +150,19 @@
 }
 
 .project-skills span {
-  font-size: clamp(
-    0.62rem,
-    1.2vw,
-    0.68rem
-  ); /* Scaled chips down slightly for smaller screens */
-  padding: 3px 8px;
+  font-size: clamp(0.62rem, 1.2vw, 0.68rem);
+  padding: 3px 10px;
   border-radius: 999px;
   background: rgba(30, 20, 60, 0.85);
   color: #d1d5db;
   border: 1px solid rgba(168, 85, 247, 0.3);
 }
 
-/* =====================
-   ACTION BUTTONS
-===================== */
 .view-project {
   display: block;
-  margin: 12px 4px 0 4px;
-  padding: 8px 0;
-  font-size: clamp(0.75rem, 1.4vw, 0.8rem);
+  margin: 14px 4px 0 4px;
+  padding: 10px 0;
+  font-size: clamp(0.75rem, 1.4vw, 0.82rem);
   font-weight: 600;
   text-align: center;
   text-decoration: none;
@@ -179,104 +178,97 @@
   box-shadow: 0 6px 15px rgba(218, 64, 141, 0.25);
 }
 
-/* =====================
-   DYNAMIC TRAIN KEYFRAME
-===================== */
-@keyframes trainScroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+/* Navigation Indicator Track Dots */
+.project-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(168, 85, 247, 0.25);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.dot.active {
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+  width: 24px;
+  border-radius: 999px;
+  border-color: transparent;
 }
 
 /* =====================
-   RESPONSIVE OVERRIDES
+   RESPONSIVE LAYOUT OVERRIDES (Tab & Mobile)
 ===================== */
-
-/* Desktop Breakpoint Adjustments */
-@media screen and (max-width: 1340px) {
-  .project-card-wrapper {
-    width: calc(
-      (100vw - 120px) / 3
-    ); /* Smoothly transitions scale past max-width boundaries */
-  }
-  .project-carousel-container {
-    padding: 8px 20px;
-  }
-  .project-carousel-container {
-    width: 100%;
-    max-width: 1100px;
-    padding: 8px 0;
-  }
-}
-
-/* Tablet Optimization (Displays exactly 2 items on-screen nicely) */
 @media screen and (max-width: 1024px) {
+  .project-carousel-track {
+    height: 400px;
+  }
   .project-card-wrapper {
-    width: calc((100vw - 70px) / 2); /* Optimized spacing map */
+    max-width: 400px;
   }
-  .project-slide-group {
-    gap: 20px;
-    padding-right: 20px;
+  /* Bring side cards inward slightly to adapt to narrower screen widths */
+  .project-card-wrapper.prev-card {
+    transform: translateX(-80%) scale(0.8) rotateY(10deg);
   }
-  .project-carousel-container {
-    width: 100%;
-    max-width: 900px;
-    padding: 12px 15px;
-  }
-  .project-title {
-    min-height: 320px; /* Reduced vertical stretch requirement */
+  .project-card-wrapper.next-card {
+    transform: translateX(80%) scale(0.8) rotateY(-10deg);
   }
 }
 
-/* Small Tablets & Large Phones (Maintains a clean partial card layout) */
 @media screen and (max-width: 768px) {
+  .project-carousel-track {
+    height: 380px;
+  }
   .project-card-wrapper {
-    width: calc(
-      100vw - 120px
-    ); 
+    max-width: 80%;
+  }
+  .project-card-wrapper.prev-card {
+    transform: translateX(-95%) scale(0.75);
+    opacity: 0.15;
+  }
+  .project-card-wrapper.next-card {
+    transform: translateX(95%) scale(0.75);
+    opacity: 0.15;
   }
   .project-title p {
     text-align: left;
   }
-  .project-carousel-container {
-    width: 100%;
-    max-width: 700px;
-    padding: 8px 0;
-  }
 }
 
-/* Mobile & Small Screen Optimization */
 @media screen and (max-width: 480px) {
+  #projects {
+    padding: clamp(30px, 6vh, 50px) 0;
+  }
+  .project-carousel-track {
+    height: 360px;
+  }
   .project-card-wrapper {
-    width: calc(
-      100vw - 50px
-    ); 
+    max-width: calc(100vw - 40px);
   }
-  .project-carousel-container {
-    width: 100%;
-    max-width: 390px;
-    padding: 8px 0;
-  }
-  .project-slide-group {
-    gap: 15px;
-    padding-right: 15px;
+
+  .project-card-wrapper.prev-card,
+  .project-card-wrapper.next-card {
+    opacity: 0;
+    visibility: hidden;
   }
   .project-title {
-    min-height: 290px; /* Tightens height space so the layout fits compactly on smaller viewports */
-    padding: 1rem; /* Compact card edge borders padding */
-  }
-  .project-title h3 {
-    margin-bottom: 10px;
+    min-height: 280px;
+    padding: 1.1rem;
   }
   .project-title p {
+    line-height: 1.45;
     margin-bottom: 12px;
-    line-height: 1.45; /* Clean layout paragraph sizing */
   }
   .view-project {
-    margin-top: 10px;
-    padding: 7px 0; /* Sleeker click target for touch displays */
+    padding: 8px 0;
+    margin-top: 8px;
   }
 }

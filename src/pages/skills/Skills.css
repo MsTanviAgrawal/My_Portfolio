@@ -1,6 +1,4 @@
-/* =====================
-   SKILLS SECTION
-===================== */
+
 #skills {
   text-align: center;
   padding: clamp(40px, 8vh, 60px) 15px; 
@@ -9,9 +7,6 @@
   overflow-x: hidden;
 }
 
-/* =====================
-   HEADING
-===================== */
 .skills-heading h1 {
   margin-top: 0;
   font-size: clamp(1.4rem, 5vw, 2.2rem);
@@ -38,9 +33,6 @@
   line-height: 1.4;
 }
 
-/* =====================
-   GRID - Fluid & Responsive
-===================== */
 .sills-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
@@ -49,9 +41,6 @@
   margin: 0 auto;
 }
 
-/* =====================
-   SKILL CARD WITH DROP & CASCADE ANIMATION
-===================== */
 .skills-title {
   border-radius: 16px;
   padding-bottom: 1rem;
@@ -78,7 +67,6 @@
   }
 }
 
-/* CARD TITLE */
 .skills-title h3 {
   font-size: clamp(1.1rem, 3vw, 1.4rem);
   color: #f5f3ff;
@@ -87,9 +75,6 @@
   font-weight: 600;
 }
 
-/* =====================
-   SKILL CHIPS (The individual tech badges)
-===================== */
 .skills-nameLogo {
   display: flex;
   flex-wrap: wrap;
@@ -115,7 +100,6 @@
   border-color: rgba(236, 72, 153, 0.5);
 }
 
-/* ICON + TEXT */
 .skills-logo {
   width: auto;
   height: clamp(1.2rem, 2.5vw, 1.6rem); 
@@ -130,9 +114,6 @@
   white-space: nowrap;
 }
 
-/* =====================
-   CASCADING DROP TIMELINE KEYFRAMES
-===================== */
 @keyframes dropCascadeIn {
   0% {
     opacity: 0;
@@ -145,9 +126,6 @@
   }
 }
 
-/* =====================
-   MOBILE OPTIMIZATIONS
-===================== */
 @media screen and (max-width: 480px) {
   #skills {
     padding: clamp(40px, 4vh, 60px) 15px;
@@ -165,7 +143,6 @@
   .sills-section {
     width: 90%; 
     gap: 15px;
-    /* Adjust grid fallback limits for thin display tracks */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
