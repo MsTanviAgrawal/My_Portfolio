@@ -1,11 +1,10 @@
-
 #experience-page {
   text-align: center;
-  padding: clamp(40px, 8vh, 60px) 15px; 
+  padding: clamp(40px, 8vh, 60px) 15px;
   position: relative;
   z-index: 1;
   overflow-x: hidden;
-  perspective: 1200px; 
+  perspective: 1200px;
 }
 
 #experience-page::before,
@@ -96,7 +95,7 @@
     rgba(15, 5, 35, 0.98)
   );
   border-radius: 20px;
-  padding: 30px ;
+  padding: 30px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -106,16 +105,22 @@
   align-items: center;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
-              opacity 0.7s ease, 
-              box-shadow 0.4s ease, 
-              border-color 0.4s ease;
+  transition:
+    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.7s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
 }
 
-.experience-card:nth-child(1) { border: 1px solid rgba(240, 80, 160, 0.4); }
-.experience-card:nth-child(2) { border: 1px solid rgba(168, 85, 247, 0.4); }
-.experience-card:nth-child(3) { border: 1px solid rgba(54, 149, 237, 0.4); }
-
+.experience-card:nth-child(1) {
+  border: 1px solid rgba(240, 80, 160, 0.4);
+}
+.experience-card:nth-child(2) {
+  border: 1px solid rgba(168, 85, 247, 0.4);
+}
+.experience-card:nth-child(3) {
+  border: 1px solid rgba(54, 149, 237, 0.4);
+}
 
 .experience-card.pos-0 {
   transform: translate3d(0, 0, 0) scale(1) rotateX(0deg);
@@ -130,7 +135,7 @@
 }
 
 .experience-card.pos-2 {
-  transform: translate3d(50px, -40px, -100px) scale(0.90) rotateX(2deg);
+  transform: translate3d(50px, -40px, -100px) scale(0.9) rotateX(2deg);
   z-index: 1;
   opacity: 0.65;
 }
@@ -168,7 +173,7 @@
   color: #f56eb1;
   font-weight: 600;
   font-size: 1.05rem;
-  margin: 0 ;
+  margin: 0;
 }
 
 .experience-points {
@@ -177,14 +182,14 @@
   color: #e5e7eb;
   display: grid;
   gap: 10px;
-  list-style: none; 
+  list-style: none;
   max-width: 90%;
 }
 
 .experience-points li {
   font-size: clamp(0.82rem, 1.6vw, 0.92rem);
   line-height: 1.6;
-  text-align: center; 
+  text-align: center;
   opacity: 0.9;
 }
 
@@ -195,7 +200,7 @@
   .experience-stack-container {
     min-height: 390px;
   }
-  
+
   .experience-ladder {
     max-width: 90%;
     height: 350px;
@@ -204,12 +209,18 @@
   .experience-card.pos-1 {
     transform: translate3d(15px, -15px, -40px) scale(0.95);
   }
-  
+
   .experience-card.pos-2 {
-    transform: translate3d(30px, -30px, -80px) scale(0.90);
+    transform: translate3d(30px, -30px, -80px) scale(0.9);
   }
-  
+
   .experience-points {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #experience-page {
+    padding: clamp(30px, 6vh, 50px) 0;
   }
 }

@@ -1,5 +1,4 @@
-
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Skills.css'
 import htmlLogo from '../../assets/tech_logo/html.png';
 import cssLogo from '../../assets/tech_logo/css.png';
@@ -21,6 +20,7 @@ import vercelLogo from '../../assets/tech_logo/vercel.png';
 import nextjsLogo from '../../assets/tech_logo/nextjs.png';
 
 const Skills = () => {
+  const [currentFace, setCurrentFace] = useState(0);
 
   const SkillsInfo = [
     {
@@ -64,10 +64,17 @@ const Skills = () => {
     },
   ];
 
+  // Automated 3D carousel rotator loop - changes face every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentFace((prevFace) => (prevFace + 1) % 4);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <section id="skills">
-
         <div className="skills-heading">
           <h1>SKILLS</h1>
           <p>
@@ -75,31 +82,46 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="sills-section">
-          {SkillsInfo.map((category, index) => (
-            <div 
-              className='skills-title' 
-              key={category.title}
-              style={{ '--card-index': index }} /* Passes the index dynamically to CSS for the staggered cascade */
-            >
-              <h3>{category.title}</h3>
+        {/* 3D Viewport Stage Stage Container */}
+        <div className="skills-3d-stage">
+          <div 
+            className="skills-cuboid" 
+            style={{ transform: `rotateY(${-currentFace * 90}deg)` }}
+          >
+            {SkillsInfo.map((category, index) => (
+              <div 
+                className={`skills-title face-${index}`} 
+                key={category.title}
+              >
+                <h3>{category.title}</h3>
 
-              <div className='skills-nameLogo'>
-                {category.skills.map((skill) => (
-                  <div key={skill.name}>
-                    <img 
-                      className='skills-logo'
-                      src={skill.logo}
-                      alt={`${skill.name} logo`}
-                    />
-                    <span className='skills-name'>
-                      {skill.name}
-                    </span>
-                  </div>
-                ))}
+                <div className='skills-nameLogo'>
+                  {category.skills.map((skill) => (
+                    <div key={skill.name}>
+                      <img 
+                        className='skills-logo'
+                        src={skill.logo}
+                        alt={`${skill.name} logo`}
+                      />
+                      <span className='skills-name'>
+                        {skill.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
+            ))}
+          </div>
+        </div>
 
-            </div>
+        {/* Navigation Indicators */}
+        <div className="skills-indicators">
+          {SkillsInfo.map((_, index) => (
+            <span 
+              key={index} 
+              className={`indicator-dot ${currentFace === index ? 'active' : ''}`}
+              onClick={() => setCurrentFace(index)}
+            />
           ))}
         </div>
       </section>

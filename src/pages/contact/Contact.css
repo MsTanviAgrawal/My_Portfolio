@@ -1,11 +1,10 @@
-
 #contact {
   justify-content: center;
   text-align: center;
-  padding: clamp(40px, 8vh, 60px) 15px; 
+  padding: clamp(40px, 8vh, 60px) 15px;
   position: relative;
   z-index: 1;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .contact-heading h1 {
@@ -27,10 +26,10 @@
 }
 
 .contact-heading p {
-  font-size: clamp(0.75rem, 1.8vw, 0.85rem); 
+  font-size: clamp(0.75rem, 1.8vw, 0.85rem);
   color: #c7c7d2;
   margin: 0.8rem auto 1.8rem;
-  max-width: 480px; 
+  max-width: 480px;
   line-height: 1.4;
 }
 
@@ -53,10 +52,12 @@ form {
 
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   padding: clamp(1.2rem, 3vw, 2rem);
   border-radius: 14px;
-  max-width: 450px; 
+  max-width: 450px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -79,7 +80,7 @@ form {
 
 input,
 textarea {
-  width: 100%; 
+  width: 100%;
   padding: clamp(10px, 2vw, 12px);
   border-radius: 8px;
   border: 1px solid rgba(168, 85, 247, 0.3);
@@ -89,7 +90,7 @@ textarea {
   margin-bottom: 12px;
   resize: none;
   transition: all 0.3s ease;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 input::placeholder,
@@ -127,16 +128,19 @@ textarea:focus {
 
 @media screen and (max-width: 480px) {
   #contact {
-    padding: clamp(40px, 4vh, 60px) 15px;
+    padding: clamp(45px, 6vh, 50px) 10px;
   }
-  
+
   form {
-    width: 95%; 
-    padding: 1.2rem;
+    width: 98%;
+    padding: 0.8rem 1rem;
     border-radius: 12px;
   }
 
   .contact-heading h1 {
     margin-bottom: 5px;
+  }
+  .contact-heading p {
+    margin: 0.8rem auto 1rem;
   }
 }
