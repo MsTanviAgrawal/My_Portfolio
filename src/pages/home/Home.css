@@ -1,6 +1,4 @@
-/* =====================
-   HERO SECTION (.first)
-===================== */
+
 .first {
   /* width: 100%; */
   display: flex;
@@ -19,15 +17,6 @@
   width: 45%;
   margin: 0;
 }
-
-/* =====================
-   LEFT SECTION (Text)
-===================== */
-
-/* .leftSection { 
-    font-size: clamp(1.5rem, 4vw, 3.5rem);
-    margin-top: 0;
-} */
 
 .leftSection {
   font-size: clamp(1.5rem, 4vw, 3.5rem);
@@ -93,31 +82,11 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* =====================
-   RIGHT SECTION (Image)
-===================== */
 .rightSection {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* .rightSection img {
-    
-    width: clamp(220px, 35vw, 450px);
-    height: clamp(220px, 35vw, 450px);
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
-    transition: all 0.4s ease;
-    transform: translateZ(0);
-}
-
-.rightSection img:hover {
-    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.25);
-    transform: scale(1.03);
-    filter: brightness(1.05);
-} */
 
 .rightSection img {
   width: clamp(220px, 35vw, 450px);
@@ -134,11 +103,6 @@
   transition: all 0.4s ease;
 }
 
-/* =====================
-   RESPONSIVE BREAKPOINTS
-==================== */
-
-/* Tablet (Laptops/Tablets) */
 @media screen and (max-width: 1024px) {
   .first {
     flex-direction: column-reverse; 
@@ -156,7 +120,6 @@
   }
 }
 
-/* Mobile Devices */
 @media screen and (max-width: 480px) {
   .first {
     margin-top: 80px;
@@ -190,7 +153,6 @@
   display: none !important;
 }
 
-/* Slide from left */
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -202,7 +164,6 @@
   }
 }
 
-/* Slide from right */
 @keyframes slideInRight {
   from {
     opacity: 0;
@@ -214,7 +175,6 @@
   }
 }
 
-/* 🌊 Floating animation */
 @keyframes floatUpDown {
   0% {
     transform: translateY(0px);

@@ -6,7 +6,6 @@ import Experience from './pages/experience/Experience';
 import Skills from './pages/skills/Skills';
 import Projects from './pages/project/Projects';
 import Education from './pages/education/Education'
-// import Resume from './pages/Resume';
 import Contact from './pages/contact/Contact';
 import './App.css';
 
@@ -20,8 +19,6 @@ const App = () => {
         <Route path="skills" element={<Skills />} />
         <Route path="projects" element={<Projects />} />
         <Route path="education" element={<Education />} />
-
-        {/* <Route path="resume" element={<Resume />} /> */}
         <Route path="contact" element={<Contact />} />
       </Route>
     </Routes>

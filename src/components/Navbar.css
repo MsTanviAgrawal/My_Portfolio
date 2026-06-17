@@ -83,7 +83,6 @@
   }
 }
 
-/* ─── RESPONSIVE TARGET REFACTOR SCRIPT (MOBILE VIEWS) ─── */
 @media (max-width: 750px) {
   .navbar-links.desktop {
     display: none;
@@ -107,7 +106,6 @@
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* CSS keyframes to transform lines into cross icon actively */
   .hamburger.open span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
@@ -121,14 +119,13 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  /* Shifting Menu Drawer positions cleanly from Right onto the Left-Hand Side */
   .sidebar {
     display: flex;
     flex-direction: column;
     position: fixed;
     top: 0;
-    left: -250px; /* Hidden offscreen on the left margin rules */
-    right: auto;   /* Overrides previous right assignment styles */
+    left: -250px;
+    right: auto;  
     height: 100vh;
     width: 250px;
     background: linear-gradient(180deg, #2e0351 0%, #660d97 40%, #18012f 100%);
@@ -139,7 +136,7 @@
   }
 
   .sidebar.open {
-    left: 0; /* Slides open nicely from left boundary edge */
+    left: 0;
   }
 
   .sidebar .navbar-links {

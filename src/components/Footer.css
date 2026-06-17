@@ -1,10 +1,7 @@
-/* =====================
-   FOOTER SECTION
-===================== */
+
 footer {
   position: relative;
   color: #eaeaf0;
-  /* Fluid padding: min 20px, max 60px */
   padding: clamp(20px, 5vh, 10px) 15px 25px;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -49,7 +46,6 @@ footer * {
   margin: 0 auto;
 }
 
-/* FOOTER LOGO/NAME */
 .footer-section h2 {
   margin-top: 0;
   font-size: clamp(1.5rem, 5vw, 2rem);
@@ -62,7 +58,6 @@ footer * {
   white-space: nowrap;
 }
 
-/* NAVIGATION BUTTONS */
 .footer-details {
   display: flex;
   justify-content: center;
@@ -86,7 +81,6 @@ footer * {
   transform: translateY(-2px);
 }
 
-/* SOCIAL MEDIA ICONS */
 .social-media {
   display: flex;
   justify-content: center;
@@ -97,7 +91,6 @@ footer * {
 
 .social-media a {
   color: #e5e7eb;
-  /* Fluid icon sizing */
   font-size: clamp(1.2rem, 4vw, 1.5rem);
   transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
@@ -108,7 +101,6 @@ footer * {
   text-shadow: 0 0 12px rgba(168, 85, 247, 0.6);
 }
 
-/* COPYRIGHT TEXT */
 footer .copyright {
   font-size: clamp(0.7rem, 1.5vw, 0.85rem);
   color: #cbd5f5;
@@ -128,17 +120,12 @@ footer .copyright a:hover {
   color: #ffffff;
 }
 
-/* =====================
-   MOBILE OPTIMIZATIONS
-===================== */
-
 @media (max-width: 600px) {
   footer {
     padding: 30px 10px 20px;
   }
 
   .footer-details {
-    /* Stack links on very narrow screens if they don't fit */
     gap: 12px;
   }
 

@@ -29,7 +29,6 @@ const Footer = () => {
       icon: <FaFacebook />,
       link: "https://www.facebook.com/tanvi.agrawal.1000",
     },
-    // { icon: <FaGmail />, link: " /" },
     {
       icon: <FaInstagram />,
       link: "https://www.instagram.com/_tanvi.agrawal__/",

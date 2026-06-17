@@ -1,18 +1,13 @@
-/* =====================
-   CONTACT SECTION
-===================== */
+
 #contact {
   justify-content: center;
   text-align: center;
-  padding: clamp(40px, 8vh, 60px) 15px; /* Reduced vertical padding */
+  padding: clamp(40px, 8vh, 60px) 15px; 
   position: relative;
   z-index: 1;
   overflow-x: hidden; 
 }
 
-/* =====================
-   HEADING
-===================== */
 .contact-heading h1 {
   margin-top: 0;
   font-size: clamp(1.4rem, 5vw, 2.2rem);
@@ -32,16 +27,13 @@
 }
 
 .contact-heading p {
-  font-size: clamp(0.75rem, 1.8vw, 0.85rem); /* Smaller text */
+  font-size: clamp(0.75rem, 1.8vw, 0.85rem); 
   color: #c7c7d2;
   margin: 0.8rem auto 1.8rem;
   max-width: 480px; 
   line-height: 1.4;
 }
 
-/* =====================
-   FORM CONTAINER
-===================== */
 .contact-details {
   display: flex;
   justify-content: center;
@@ -78,9 +70,6 @@ form {
   }
 }
 
-/* =====================
-   CARD TITLE
-===================== */
 .contact-section h3 {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   font-weight: 600;
@@ -117,9 +106,6 @@ textarea:focus {
   /* box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.2); */
 }
 
-/* =====================
-   SUBMIT BUTTON
-===================== */
 .submit {
   width: 100%;
   padding: clamp(9px, 2vw, 11px);
@@ -139,17 +125,13 @@ textarea:focus {
   box-shadow: 0 6px 15px rgba(236, 72, 153, 0.4);
 }
 
-/* =====================
-   RESPONSIVE OVERRIDES
-===================== */
-
 @media screen and (max-width: 480px) {
   #contact {
     padding: clamp(40px, 4vh, 60px) 15px;
   }
   
   form {
-    width: 95%; /* More width on very small screens */
+    width: 95%; 
     padding: 1.2rem;
     border-radius: 12px;
   }

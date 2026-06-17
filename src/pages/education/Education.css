@@ -1,6 +1,4 @@
-/* =====================
-   EDUCATION SECTION
-===================== */
+
 #education {
   text-align: center;
   padding: clamp(40px, 8vh, 60px) 15px; 
@@ -13,9 +11,6 @@
   margin-bottom: 20px;
 }
 
-/* =====================
-   HEADING
-===================== */
 .education-section h1 {
   margin-top: 0;
   font-size: clamp(1.4rem, 5vw, 2.2rem);
@@ -42,9 +37,6 @@
   line-height: 1.4;
 }
 
-/* =====================
-   EDUCATION CARD (Slim & Uniform)
-===================== */
 .college {
   max-width: 650px;              
   width: 88%;
@@ -61,7 +53,6 @@
 
   border: 1px solid rgba(168, 85, 247, 0.3);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -74,9 +65,6 @@
   }
 }
 
-/* =====================
-   COLLEGE CONTENT
-===================== */
 .college img {
   width: clamp(56px, 8vw, 72px);          
   height: clamp(56px, 8vw, 72px);
@@ -84,7 +72,6 @@
   padding: 5px;
   border-radius: 50%;
   object-fit: contain;
-
   background-color: #ffffff;
   border: 2px solid #a855f7;
 }
@@ -116,10 +103,6 @@
   font-weight: 600;
   margin-bottom: 2px;
 }
-
-/* =====================
-   MOBILE OPTIMIZATIONS
-===================== */
 
 @media screen and (max-width: 480px) {
   #education {
