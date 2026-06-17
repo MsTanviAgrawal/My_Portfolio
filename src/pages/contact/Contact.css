@@ -35,7 +35,7 @@
   font-size: clamp(0.75rem, 1.8vw, 0.85rem); /* Smaller text */
   color: #c7c7d2;
   margin: 0.8rem auto 1.8rem;
-  max-width: 480px; /* Narrower width */
+  max-width: 480px; 
   line-height: 1.4;
 }
 
@@ -48,9 +48,6 @@
   padding: 0 10px;
 }
 
-/* =====================
-   CONTACT CARD (Compact & Responsive)
-===================== */
 form {
   background: linear-gradient(
     180deg,
@@ -91,12 +88,9 @@ form {
   color: #f5f3ff;
 }
 
-/* =====================
-   INPUTS
-===================== */
 input,
 textarea {
-  width: 100%; /* Full width of container */
+  width: 100%; 
   padding: clamp(10px, 2vw, 12px);
   border-radius: 8px;
   border: 1px solid rgba(168, 85, 247, 0.3);
@@ -117,9 +111,10 @@ textarea::placeholder {
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: #ec4899;
+  /* border-color: #ec4899; */
+  border: 1.5px solid #ec4899;
   background-color: rgba(30, 25, 55, 0.95);
-  box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.2);
+  /* box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.2); */
 }
 
 /* =====================
