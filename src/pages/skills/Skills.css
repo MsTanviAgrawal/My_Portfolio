@@ -185,14 +185,9 @@
   border-color: transparent;
 }
 
-/* =====================
-   RESPONSIVE MEDIA OVERRIDES
-===================== */
-
-/* Tablet & Mid-Size Screens Optimization */
 @media screen and (max-width: 768px) {
   .skills-3d-stage {
-    --translate-z: 190px; /* Brings depth distance inward slightly to account for tab width profiles */
+    --translate-z: 190px; 
     max-width: 330px;
     height: 360px;
   }
@@ -202,10 +197,10 @@
   }
 }
 
-/* Mobile & Small Handset Screen Optimization */
 @media screen and (max-width: 480px) {
   #skills {
     padding: clamp(45px, 6vh, 50px) 0;
+    margin-bottom: 30px;
   }
   
   .skills-heading p {
@@ -213,7 +208,7 @@
   }
 
   .skills-3d-stage {
-    --translate-z: 145px; /* Compresses 3D geometry bounds tightly to fit small touch canvases perfectly */
+    --translate-z: 145px; 
     max-width: 260px;
     height: 250px;
     margin-top: 2.5rem;
@@ -238,7 +233,6 @@
 }
 }
 
-/* Ultra Small Device Support (Foldables / Under 340px screen width) */
 @media screen and (max-width: 340px) {
   .skills-3d-stage {
     --translate-z: 120px;

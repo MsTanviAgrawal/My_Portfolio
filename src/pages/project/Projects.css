@@ -246,6 +246,7 @@
 @media screen and (max-width: 480px) {
   #projects {
     padding: clamp(45px, 6vh, 50px) 0;
+    margin-bottom: 30px;
   }
   .project-carousel-track {
     height: 300px;

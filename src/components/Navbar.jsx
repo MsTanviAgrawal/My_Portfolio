@@ -42,10 +42,10 @@ const Navbar = ({ onScroll }) => {
             </button>
           </li>
           <li>
-            <button onClick={() => handleNavClick("skills")}>Skills</button>
+            <button onClick={() => handleNavClick("projects")}>Projects</button>
           </li>
           <li>
-            <button onClick={() => handleNavClick("projects")}>Projects</button>
+            <button onClick={() => handleNavClick("skills")}>Skills</button>
           </li>
           <li>
             <button onClick={() => handleNavClick("education")}>
