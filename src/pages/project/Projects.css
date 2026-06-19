@@ -249,7 +249,7 @@
     margin-bottom: 30px;
   }
   .project-carousel-track {
-    height: 320px;
+    height: 340px;
   }
   .project-card-wrapper {
     max-width: calc(100vw - 50px);
@@ -273,6 +273,6 @@
     margin-top: 8px;
   }
   .project-dots {
-    margin-top: 1.2rem;
+    margin-top: 1.5rem;
 }
 }
