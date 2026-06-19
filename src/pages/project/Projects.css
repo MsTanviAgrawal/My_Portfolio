@@ -249,10 +249,10 @@
     margin-bottom: 30px;
   }
   .project-carousel-track {
-    height: 300px;
+    height: 320px;
   }
   .project-card-wrapper {
-    max-width: calc(100vw - 40px);
+    max-width: calc(100vw - 50px);
   }
 
   .project-card-wrapper.prev-card,
@@ -262,7 +262,7 @@
   }
   .project-title {
     min-height: 280px;
-    padding: 1.1rem;
+    padding: 1rem;
   }
   .project-title p {
     line-height: 1.45;
@@ -273,6 +273,6 @@
     margin-top: 8px;
   }
   .project-dots {
-  margin-top: 1.2rem;
+    margin-top: 1.2rem;
 }
 }
